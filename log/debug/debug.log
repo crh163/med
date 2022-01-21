@@ -1,0 +1,529 @@
+2022-01-20 16:09:11,815 INFO [main] com.bootdo.BootdoApplication [StartupInfoLogger.java : 50] Starting BootdoApplication on macdeMac-mini.local with PID 44498 (/Users/mac/rory/gitwork/zyl-bs/med/target/classes started by mac in /Users/mac/rory/gitwork/zyl-bs/med)
+2022-01-20 16:09:11,867 DEBUG [main] com.bootdo.BootdoApplication [StartupInfoLogger.java : 53] Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+2022-01-20 16:09:11,869 INFO [main] com.bootdo.BootdoApplication [SpringApplication.java : 663] The following profiles are active: dev
+2022-01-20 16:09:11,928 INFO [main] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext [AbstractApplicationContext.java : 590] Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4b7e96a: startup date [Thu Jan 20 16:09:11 CST 2022]; root of context hierarchy
+2022-01-20 16:09:12,486 WARN [main] o.m.s.mapper.ClassPathMapperScanner [Logger.java : 44] No MyBatis mapper was found in '[com.bootdo.*.dao]' package. Please check your configuration.
+2022-01-20 16:09:12,678 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java : 163] Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-01-20 16:09:13,220 INFO [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java : 328] Bean 'shiroConfig' of type [com.bootdo.common.config.ShiroConfig$$EnhancerBySpringCGLIB$$39a8593e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-01-20 16:09:13,532 INFO [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java : 328] Bean 'userRealm' of type [com.bootdo.common.config.UserRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-01-20 16:09:13,565 INFO [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java : 328] Bean 'redisManager' of type [com.bootdo.common.config.RedisManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-01-20 16:09:13,567 DEBUG [main] c.b.common.config.RedisCacheManager [RedisCacheManager.java : 52] 获取名称为: com.bootdo.common.config.UserRealm.authorizationCache 的RedisCache实例
+2022-01-20 16:09:13,583 INFO [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java : 328] Bean 'redisSessionDAO' of type [com.bootdo.common.config.RedisSessionDAO] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-01-20 16:09:13,589 INFO [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java : 328] Bean 'sessionDAO' of type [com.bootdo.common.config.RedisSessionDAO] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-01-20 16:09:13,600 INFO [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java : 328] Bean 'sessionManager' of type [org.apache.shiro.web.session.mgt.DefaultWebSessionManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-01-20 16:09:13,621 INFO [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java : 328] Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-01-20 16:09:13,653 INFO [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java : 328] Bean 'authorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-01-20 16:09:13,663 INFO [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java : 328] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$e3a82f53] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-01-20 16:09:14,018 INFO [main] o.s.b.w.e.tomcat.TomcatWebServer [TomcatWebServer.java : 91] Tomcat initialized with port(s): 8081 (http)
+2022-01-20 16:09:14,028 INFO [main] o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java : 180] Initializing ProtocolHandler ["http-nio-8081"]
+2022-01-20 16:09:14,037 INFO [main] o.a.catalina.core.StandardService [DirectJDKLog.java : 180] Starting service [Tomcat]
+2022-01-20 16:09:14,037 INFO [main] o.a.catalina.core.StandardEngine [DirectJDKLog.java : 180] Starting Servlet Engine: Apache Tomcat/8.5.31
+2022-01-20 16:09:14,040 INFO [localhost-startStop-1] o.a.c.core.AprLifecycleListener [DirectJDKLog.java : 180] The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/mac/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2022-01-20 16:09:14,110 INFO [localhost-startStop-1] o.a.c.c.C.[.[localhost].[/bootdo] [DirectJDKLog.java : 180] Initializing Spring embedded WebApplicationContext
+2022-01-20 16:09:14,110 INFO [localhost-startStop-1] o.s.web.context.ContextLoader [ServletWebServerApplicationContext.java : 285] Root WebApplicationContext: initialization completed in 2182 ms
+2022-01-20 16:09:14,298 INFO [localhost-startStop-1] o.s.b.w.s.ServletRegistrationBean [ServletRegistrationBean.java : 186] Servlet statViewServlet mapped to [/druid/*]
+2022-01-20 16:09:14,299 INFO [localhost-startStop-1] o.s.b.w.s.ServletRegistrationBean [ServletRegistrationBean.java : 186] Servlet dispatcherServlet mapped to [/]
+2022-01-20 16:09:14,304 INFO [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean [AbstractFilterRegistrationBean.java : 245] Mapping filter: 'characterEncodingFilter' to: [/*]
+2022-01-20 16:09:14,305 INFO [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean [AbstractFilterRegistrationBean.java : 245] Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2022-01-20 16:09:14,305 INFO [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean [AbstractFilterRegistrationBean.java : 245] Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2022-01-20 16:09:14,305 INFO [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean [AbstractFilterRegistrationBean.java : 245] Mapping filter: 'requestContextFilter' to: [/*]
+2022-01-20 16:09:14,306 INFO [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean [AbstractFilterRegistrationBean.java : 258] Mapping filter: 'webStatFilter' to urls: [/*]
+2022-01-20 16:09:14,307 INFO [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean [AbstractFilterRegistrationBean.java : 245] Mapping filter: 'shiroFilterFactoryBean' to: [/*]
+2022-01-20 16:09:14,353 DEBUG [main] c.b.c.c.ApplicationContextRegister [ApplicationContextRegister.java : 29] ApplicationContext registed-->org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4b7e96a: startup date [Thu Jan 20 16:09:11 CST 2022]; root of context hierarchy
+2022-01-20 16:09:15,374 INFO [main] c.alibaba.druid.pool.DruidDataSource [Log4j2Impl.java : 106] {dataSource-1} inited
+2022-01-20 16:09:15,451 WARN [main] o.m.spring.SqlSessionFactoryBean [Logger.java : 44] Can't find class in '[com.bootdo.**.domain]' package. Please check your configuration.
+2022-01-20 16:09:15,681 WARN [main] n.s.e.config.ConfigurationFactory [ConfigurationFactory.java : 136] No configuration found. Configuring ehcache from ehcache-failsafe.xml  found in the classpath: jar:file:/Users/mac/.m2/repository/net/sf/ehcache/ehcache/2.10.5/ehcache-2.10.5.jar!/ehcache-failsafe.xml
+2022-01-20 16:09:15,883 INFO [main] o.s.w.s.h.SimpleUrlHandlerMapping [AbstractUrlHandlerMapping.java : 373] Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2022-01-20 16:09:16,288 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerAdapter [RequestMappingHandlerAdapter.java : 574] Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4b7e96a: startup date [Thu Jan 20 16:09:11 CST 2022]; root of context hierarchy
+2022-01-20 16:09:16,378 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java : 547] Mapped "{[/file/upload],methods=[POST]}" onto public com.bootdo.common.domain.entity.Response com.bootdo.controller.FileController.uploadFile(org.springframework.web.multipart.MultipartFile)
+2022-01-20 16:09:16,380 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java : 547] Mapped "{[/logout],methods=[GET]}" onto public java.lang.String com.bootdo.controller.LoginController.logout()
+2022-01-20 16:09:16,381 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java : 547] Mapped "{[/ || ],methods=[GET]}" onto public java.lang.String com.bootdo.controller.LoginController.welcome(org.springframework.ui.Model)
+2022-01-20 16:09:16,382 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java : 547] Mapped "{[/login],methods=[GET]}" onto public java.lang.String com.bootdo.controller.LoginController.login(org.springframework.ui.Model)
+2022-01-20 16:09:16,382 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java : 547] Mapped "{[/FontIcoList],methods=[GET]}" onto public java.lang.String com.bootdo.controller.LoginController.fontIcoList()
+2022-01-20 16:09:16,383 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java : 547] Mapped "{[/login],methods=[POST]}" onto public com.bootdo.common.utils.R com.bootdo.controller.LoginController.ajaxLogin(java.lang.String,java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest)
+2022-01-20 16:09:16,383 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java : 547] Mapped "{[/getVerify],methods=[GET]}" onto public void com.bootdo.controller.LoginController.getVerify(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2022-01-20 16:09:16,384 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java : 547] Mapped "{[/index],methods=[GET]}" onto public java.lang.String com.bootdo.controller.LoginController.index(org.springframework.ui.Model)
+2022-01-20 16:09:16,385 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java : 547] Mapped "{[/main],methods=[GET]}" onto public java.lang.String com.bootdo.controller.LoginController.main()
+2022-01-20 16:09:16,388 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java : 547] Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2022-01-20 16:09:16,389 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java : 547] Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2022-01-20 16:09:16,451 INFO [main] o.s.w.s.h.SimpleUrlHandlerMapping [AbstractUrlHandlerMapping.java : 373] Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2022-01-20 16:09:16,451 INFO [main] o.s.w.s.h.SimpleUrlHandlerMapping [AbstractUrlHandlerMapping.java : 373] Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2022-01-20 16:09:16,522 WARN [main] o.t.templatemode.TemplateMode [TemplateMode.java : 150] [THYMELEAF][main] Template Mode 'LEGACYHTML5' is deprecated. Using Template Mode 'HTML' instead.
+2022-01-20 16:09:17,115 INFO [main] org.quartz.impl.StdSchedulerFactory [StdSchedulerFactory.java : 1184] Using default implementation for ThreadExecutor
+2022-01-20 16:09:17,127 INFO [main] o.quartz.core.SchedulerSignalerImpl [SchedulerSignalerImpl.java : 61] Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2022-01-20 16:09:17,128 INFO [main] org.quartz.core.QuartzScheduler [QuartzScheduler.java : 240] Quartz Scheduler v.2.2.1 created.
+2022-01-20 16:09:17,128 INFO [main] org.quartz.simpl.RAMJobStore [RAMJobStore.java : 155] RAMJobStore initialized.
+2022-01-20 16:09:17,129 INFO [main] org.quartz.core.QuartzScheduler [QuartzScheduler.java : 305] Scheduler meta-data: Quartz Scheduler (v2.2.1) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2022-01-20 16:09:17,129 INFO [main] org.quartz.impl.StdSchedulerFactory [StdSchedulerFactory.java : 1339] Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2022-01-20 16:09:17,129 INFO [main] org.quartz.impl.StdSchedulerFactory [StdSchedulerFactory.java : 1343] Quartz scheduler version: 2.2.1
+2022-01-20 16:09:17,129 INFO [main] org.quartz.core.QuartzScheduler [QuartzScheduler.java : 2311] JobFactory set to: org.springframework.boot.autoconfigure.quartz.AutowireCapableBeanJobFactory@27dc81be
+2022-01-20 16:09:17,242 INFO [main] o.s.j.e.a.AnnotationMBeanExporter [MBeanExporter.java : 433] Registering beans for JMX exposure on startup
+2022-01-20 16:09:17,244 INFO [main] o.s.j.e.a.AnnotationMBeanExporter [MBeanExporter.java : 895] Bean with name 'fdfsConnectionPool' has been autodetected for JMX exposure
+2022-01-20 16:09:17,244 INFO [main] o.s.j.e.a.AnnotationMBeanExporter [MBeanExporter.java : 895] Bean with name 'dataSource' has been autodetected for JMX exposure
+2022-01-20 16:09:17,249 INFO [main] o.s.j.e.a.AnnotationMBeanExporter [MBeanExporter.java : 668] Located MBean 'fdfsConnectionPool': registering with JMX server as MBean [com.github.tobato.fastdfs.conn:name=fdfsConnectionPool,type=FdfsConnectionPool]
+2022-01-20 16:09:17,251 INFO [main] o.s.j.e.a.AnnotationMBeanExporter [MBeanExporter.java : 668] Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2022-01-20 16:09:17,255 INFO [main] o.s.c.s.DefaultLifecycleProcessor [DefaultLifecycleProcessor.java : 351] Starting beans in phase 2147483647
+2022-01-20 16:09:17,255 INFO [main] o.s.s.quartz.SchedulerFactoryBean [SchedulerFactoryBean.java : 700] Starting Quartz Scheduler now
+2022-01-20 16:09:17,255 INFO [main] org.quartz.core.QuartzScheduler [QuartzScheduler.java : 575] Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2022-01-20 16:09:17,262 INFO [main] o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java : 180] Starting ProtocolHandler ["http-nio-8081"]
+2022-01-20 16:09:17,280 INFO [main] o.a.tomcat.util.net.NioSelectorPool [DirectJDKLog.java : 180] Using a shared selector for servlet write/read
+2022-01-20 16:09:17,292 INFO [main] o.s.b.w.e.tomcat.TomcatWebServer [TomcatWebServer.java : 206] Tomcat started on port(s): 8081 (http) with context path '/bootdo'
+2022-01-20 16:09:17,298 INFO [main] com.bootdo.BootdoApplication [StartupInfoLogger.java : 59] Started BootdoApplication in 5.964 seconds (JVM running for 6.661)
+2022-01-20 16:11:04,717 INFO [http-nio-8081-exec-1] o.a.c.c.C.[.[localhost].[/bootdo] [DirectJDKLog.java : 180] Initializing Spring FrameworkServlet 'dispatcherServlet'
+2022-01-20 16:11:04,718 INFO [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet [FrameworkServlet.java : 494] FrameworkServlet 'dispatcherServlet': initialization started
+2022-01-20 16:11:04,739 INFO [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet [FrameworkServlet.java : 509] FrameworkServlet 'dispatcherServlet': initialization completed in 21 ms
+2022-01-20 16:11:04,754 INFO [http-nio-8081-exec-1] o.a.s.s.m.AbstractValidatingSessionManager [AbstractValidatingSessionManager.java : 233] Enabling session validation scheduler...
+2022-01-20 16:11:04,820 INFO [http-nio-8081-exec-1] c.bootdo.common.aspect.WebLogAspect [WebLogAspect.java : 33] 请求地址 : http://localhost:8081/bootdo/login
+2022-01-20 16:11:04,820 INFO [http-nio-8081-exec-1] c.bootdo.common.aspect.WebLogAspect [WebLogAspect.java : 34] HTTP METHOD : GET
+2022-01-20 16:11:04,822 INFO [http-nio-8081-exec-1] c.bootdo.common.aspect.WebLogAspect [WebLogAspect.java : 35] CLASS_METHOD : com.bootdo.controller.LoginController.login
+2022-01-20 16:11:04,822 INFO [http-nio-8081-exec-1] c.bootdo.common.aspect.WebLogAspect [WebLogAspect.java : 37] 参数 : [{}]
+2022-01-20 16:11:04,825 INFO [http-nio-8081-exec-1] c.bootdo.common.aspect.WebLogAspect [WebLogAspect.java : 51] 耗时 : 5
+2022-01-20 16:11:04,825 DEBUG [http-nio-8081-exec-1] c.bootdo.common.aspect.WebLogAspect [WebLogAspect.java : 44] 返回值 : login
+2022-01-20 16:11:05,352 INFO [http-nio-8081-exec-3] c.bootdo.common.aspect.WebLogAspect [WebLogAspect.java : 33] 请求地址 : http://localhost:8081/bootdo/getVerify
+2022-01-20 16:11:05,353 INFO [http-nio-8081-exec-3] c.bootdo.common.aspect.WebLogAspect [WebLogAspect.java : 34] HTTP METHOD : GET
+2022-01-20 16:11:05,353 INFO [http-nio-8081-exec-3] c.bootdo.common.aspect.WebLogAspect [WebLogAspect.java : 35] CLASS_METHOD : com.bootdo.controller.LoginController.getVerify
+2022-01-20 16:11:05,353 INFO [http-nio-8081-exec-3] c.bootdo.common.aspect.WebLogAspect [WebLogAspect.java : 37] 参数 : [org.apache.shiro.web.servlet.ShiroHttpServletRequest@79ed8154, org.apache.shiro.web.servlet.ShiroHttpServletResponse@74e98c2f]
+2022-01-20 16:11:07,388 INFO [http-nio-8081-exec-3] c.b.c.utils.RandomValidateCodeUtil [RandomValidateCodeUtil.java : 76] 4226
+2022-01-20 16:11:07,505 INFO [http-nio-8081-exec-3] c.bootdo.common.aspect.WebLogAspect [WebLogAspect.java : 51] 耗时 : 2153
+2022-01-20 16:11:07,505 DEBUG [http-nio-8081-exec-3] c.bootdo.common.aspect.WebLogAspect [WebLogAspect.java : 44] 返回值 : null
+2022-01-20 16:11:11,346 INFO [http-nio-8081-exec-1] c.bootdo.common.aspect.WebLogAspect [WebLogAspect.java : 33] 请求地址 : http://localhost:8081/bootdo/login
+2022-01-20 16:11:11,346 INFO [http-nio-8081-exec-1] c.bootdo.common.aspect.WebLogAspect [WebLogAspect.java : 34] HTTP METHOD : POST
+2022-01-20 16:11:11,346 INFO [http-nio-8081-exec-1] c.bootdo.common.aspect.WebLogAspect [WebLogAspect.java : 35] CLASS_METHOD : com.bootdo.controller.LoginController.ajaxLogin
+2022-01-20 16:11:11,348 INFO [http-nio-8081-exec-1] c.bootdo.common.aspect.WebLogAspect [WebLogAspect.java : 37] 参数 : [test2, 111111, , org.apache.shiro.web.servlet.ShiroHttpServletRequest@5fa07362]
+2022-01-20 16:11:11,654 DEBUG [http-nio-8081-exec-1] c.b.mapper.SysUserMapper.selectOne [BaseJdbcLogger.java : 159] ==>  Preparing: SELECT id,username,name,password,status,create_id,create_date,update_id,update_date FROM sys_user WHERE username = ? 
+2022-01-20 16:11:11,730 DEBUG [http-nio-8081-exec-1] c.b.mapper.SysUserMapper.selectOne [BaseJdbcLogger.java : 159] ==> Parameters: test2(String)
+2022-01-20 16:11:11,754 DEBUG [http-nio-8081-exec-1] c.b.mapper.SysUserMapper.selectOne [BaseJdbcLogger.java : 159] <==      Total: 0
+2022-01-20 16:11:11,757 INFO [http-nio-8081-exec-1] c.bootdo.common.aspect.WebLogAspect [WebLogAspect.java : 51] 耗时 : 412
+2022-01-20 16:11:11,758 DEBUG [http-nio-8081-exec-1] c.bootdo.common.aspect.WebLogAspect [WebLogAspect.java : 44] 返回值 : {msg=用户或密码错误, code=500}
+2022-01-20 16:11:18,358 INFO [http-nio-8081-exec-5] c.bootdo.common.aspect.WebLogAspect [WebLogAspect.java : 33] 请求地址 : http://localhost:8081/bootdo/login
+2022-01-20 16:11:18,359 INFO [http-nio-8081-exec-5] c.bootdo.common.aspect.WebLogAspect [WebLogAspect.java : 34] HTTP METHOD : POST
+2022-01-20 16:11:18,359 INFO [http-nio-8081-exec-5] c.bootdo.common.aspect.WebLogAspect [WebLogAspect.java : 35] CLASS_METHOD : com.bootdo.controller.LoginController.ajaxLogin
+2022-01-20 16:11:18,359 INFO [http-nio-8081-exec-5] c.bootdo.common.aspect.WebLogAspect [WebLogAspect.java : 37] 参数 : [admin, 123456, , org.apache.shiro.web.servlet.ShiroHttpServletRequest@5b59de1d]
+2022-01-20 16:11:18,376 DEBUG [http-nio-8081-exec-5] c.b.mapper.SysUserMapper.selectOne [BaseJdbcLogger.java : 159] ==>  Preparing: SELECT id,username,name,password,status,create_id,create_date,update_id,update_date FROM sys_user WHERE username = ? 
+2022-01-20 16:11:18,377 DEBUG [http-nio-8081-exec-5] c.b.mapper.SysUserMapper.selectOne [BaseJdbcLogger.java : 159] ==> Parameters: admin(String)
+2022-01-20 16:11:18,391 DEBUG [http-nio-8081-exec-5] c.b.mapper.SysUserMapper.selectOne [BaseJdbcLogger.java : 159] <==      Total: 1
+2022-01-20 16:11:18,756 INFO [http-nio-8081-exec-5] c.bootdo.common.aspect.WebLogAspect [WebLogAspect.java : 51] 耗时 : 398
+2022-01-20 16:11:18,757 DEBUG [http-nio-8081-exec-5] c.bootdo.common.aspect.WebLogAspect [WebLogAspect.java : 44] 返回值 : {msg=操作成功, code=0}
+2022-01-20 16:11:19,851 INFO [http-nio-8081-exec-4] c.bootdo.common.aspect.WebLogAspect [WebLogAspect.java : 33] 请求地址 : http://localhost:8081/bootdo//index
+2022-01-20 16:11:19,851 INFO [http-nio-8081-exec-4] c.bootdo.common.aspect.WebLogAspect [WebLogAspect.java : 34] HTTP METHOD : GET
+2022-01-20 16:11:19,851 INFO [http-nio-8081-exec-4] c.bootdo.common.aspect.WebLogAspect [WebLogAspect.java : 35] CLASS_METHOD : com.bootdo.controller.LoginController.index
+2022-01-20 16:11:19,852 INFO [http-nio-8081-exec-4] c.bootdo.common.aspect.WebLogAspect [WebLogAspect.java : 37] 参数 : [{}]
+2022-01-20 16:11:19,867 INFO [http-nio-8081-exec-4] c.bootdo.common.aspect.WebLogAspect [WebLogAspect.java : 51] 耗时 : 16
+2022-01-20 16:11:19,868 DEBUG [http-nio-8081-exec-4] c.bootdo.common.aspect.WebLogAspect [WebLogAspect.java : 44] 返回值 : index_v1
+2022-01-20 16:11:20,575 INFO [http-nio-8081-exec-2] c.bootdo.common.aspect.WebLogAspect [WebLogAspect.java : 33] 请求地址 : http://localhost:8081/bootdo/main
+2022-01-20 16:11:20,575 INFO [http-nio-8081-exec-2] c.bootdo.common.aspect.WebLogAspect [WebLogAspect.java : 34] HTTP METHOD : GET
+2022-01-20 16:11:20,576 INFO [http-nio-8081-exec-2] c.bootdo.common.aspect.WebLogAspect [WebLogAspect.java : 35] CLASS_METHOD : com.bootdo.controller.LoginController.main
+2022-01-20 16:11:20,576 INFO [http-nio-8081-exec-2] c.bootdo.common.aspect.WebLogAspect [WebLogAspect.java : 37] 参数 : []
+2022-01-20 16:11:20,576 INFO [http-nio-8081-exec-2] c.bootdo.common.aspect.WebLogAspect [WebLogAspect.java : 51] 耗时 : 1
+2022-01-20 16:11:20,576 DEBUG [http-nio-8081-exec-2] c.bootdo.common.aspect.WebLogAspect [WebLogAspect.java : 44] 返回值 : main
+2022-01-20 16:11:22,296 INFO [http-nio-8081-exec-3] c.bootdo.common.aspect.WebLogAspect [WebLogAspect.java : 33] 请求地址 : http://localhost:8081/bootdo/main
+2022-01-20 16:11:22,297 INFO [http-nio-8081-exec-3] c.bootdo.common.aspect.WebLogAspect [WebLogAspect.java : 34] HTTP METHOD : GET
+2022-01-20 16:11:22,297 INFO [http-nio-8081-exec-3] c.bootdo.common.aspect.WebLogAspect [WebLogAspect.java : 35] CLASS_METHOD : com.bootdo.controller.LoginController.main
+2022-01-20 16:11:22,297 INFO [http-nio-8081-exec-3] c.bootdo.common.aspect.WebLogAspect [WebLogAspect.java : 37] 参数 : []
+2022-01-20 16:11:22,297 INFO [http-nio-8081-exec-3] c.bootdo.common.aspect.WebLogAspect [WebLogAspect.java : 51] 耗时 : 1
+2022-01-20 16:11:22,298 DEBUG [http-nio-8081-exec-3] c.bootdo.common.aspect.WebLogAspect [WebLogAspect.java : 44] 返回值 : main
+2022-01-20 16:11:36,769 INFO [Thread-7] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext [AbstractApplicationContext.java : 993] Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4b7e96a: startup date [Thu Jan 20 16:09:11 CST 2022]; root of context hierarchy
+2022-01-20 16:11:36,772 INFO [Thread-7] o.s.c.s.DefaultLifecycleProcessor [DefaultLifecycleProcessor.java : 366] Stopping beans in phase 2147483647
+2022-01-20 16:11:36,773 INFO [Thread-7] org.quartz.core.QuartzScheduler [QuartzScheduler.java : 613] Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2022-01-20 16:11:36,777 INFO [Thread-7] o.s.s.quartz.SchedulerFactoryBean [SchedulerFactoryBean.java : 824] Shutting down Quartz Scheduler
+2022-01-20 16:11:36,778 INFO [Thread-7] org.quartz.core.QuartzScheduler [QuartzScheduler.java : 694] Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2022-01-20 16:11:36,779 INFO [Thread-7] org.quartz.core.QuartzScheduler [QuartzScheduler.java : 613] Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2022-01-20 16:11:36,780 INFO [Thread-7] org.quartz.core.QuartzScheduler [QuartzScheduler.java : 771] Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2022-01-20 16:11:36,786 INFO [Thread-7] o.s.j.e.a.AnnotationMBeanExporter [MBeanExporter.java : 451] Unregistering JMX-exposed beans on shutdown
+2022-01-20 16:11:36,786 INFO [Thread-7] o.s.j.e.a.AnnotationMBeanExporter [MBeanRegistrationSupport.java : 183] Unregistering JMX-exposed beans
+2022-01-20 16:11:36,787 WARN [Thread-7] o.s.j.e.a.AnnotationMBeanExporter [MBeanRegistrationSupport.java : 208] Could not unregister MBean [com.github.tobato.fastdfs.conn:name=fdfsConnectionPool,type=FdfsConnectionPool] as said MBean is not registered (perhaps already unregistered by an external process)
+2022-01-20 16:11:36,789 INFO [Thread-7] c.alibaba.druid.pool.DruidDataSource [Log4j2Impl.java : 106] {dataSource-1} closed
+2022-01-20 16:11:36,807 INFO [Thread-7] o.a.s.s.m.AbstractValidatingSessionManager [AbstractValidatingSessionManager.java : 250] Disabled session validation scheduler.
+2022-01-20 17:04:31,162 INFO [main] com.bootdo.BootdoApplication [StartupInfoLogger.java : 50] Starting BootdoApplication on macdeMac-mini.local with PID 45353 (/Users/mac/rory/gitwork/zyl-bs/med/target/classes started by mac in /Users/mac/rory/gitwork/zyl-bs/med)
+2022-01-20 17:04:31,167 DEBUG [main] com.bootdo.BootdoApplication [StartupInfoLogger.java : 53] Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+2022-01-20 17:04:31,169 INFO [main] com.bootdo.BootdoApplication [SpringApplication.java : 663] The following profiles are active: dev
+2022-01-20 17:04:31,245 INFO [main] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext [AbstractApplicationContext.java : 590] Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4b7e96a: startup date [Thu Jan 20 17:04:31 CST 2022]; root of context hierarchy
+2022-01-20 17:04:31,758 WARN [main] o.m.s.mapper.ClassPathMapperScanner [Logger.java : 44] No MyBatis mapper was found in '[com.bootdo.*.dao]' package. Please check your configuration.
+2022-01-20 17:04:31,877 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java : 163] Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-01-20 17:04:32,258 INFO [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java : 328] Bean 'shiroConfig' of type [com.bootdo.common.config.ShiroConfig$$EnhancerBySpringCGLIB$$d5a4a6e2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-01-20 17:04:32,493 INFO [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java : 328] Bean 'userRealm' of type [com.bootdo.common.config.UserRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-01-20 17:04:32,524 INFO [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java : 328] Bean 'redisManager' of type [com.bootdo.common.config.RedisManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-01-20 17:04:32,526 DEBUG [main] c.b.common.config.RedisCacheManager [RedisCacheManager.java : 52] 获取名称为: com.bootdo.common.config.UserRealm.authorizationCache 的RedisCache实例
+2022-01-20 17:04:32,539 INFO [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java : 328] Bean 'redisSessionDAO' of type [com.bootdo.common.config.RedisSessionDAO] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-01-20 17:04:32,543 INFO [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java : 328] Bean 'sessionDAO' of type [com.bootdo.common.config.RedisSessionDAO] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-01-20 17:04:32,552 INFO [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java : 328] Bean 'sessionManager' of type [org.apache.shiro.web.session.mgt.DefaultWebSessionManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-01-20 17:04:32,571 INFO [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java : 328] Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-01-20 17:04:32,595 INFO [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java : 328] Bean 'authorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-01-20 17:04:32,601 INFO [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java : 328] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$7fa47cf7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-01-20 17:04:32,918 INFO [main] o.s.b.w.e.tomcat.TomcatWebServer [TomcatWebServer.java : 91] Tomcat initialized with port(s): 8081 (http)
+2022-01-20 17:04:32,928 INFO [main] o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java : 180] Initializing ProtocolHandler ["http-nio-8081"]
+2022-01-20 17:04:32,936 INFO [main] o.a.catalina.core.StandardService [DirectJDKLog.java : 180] Starting service [Tomcat]
+2022-01-20 17:04:32,936 INFO [main] o.a.catalina.core.StandardEngine [DirectJDKLog.java : 180] Starting Servlet Engine: Apache Tomcat/8.5.31
+2022-01-20 17:04:32,938 INFO [localhost-startStop-1] o.a.c.core.AprLifecycleListener [DirectJDKLog.java : 180] The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/mac/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2022-01-20 17:04:33,010 INFO [localhost-startStop-1] o.a.c.c.C.[.[localhost].[/bootdo] [DirectJDKLog.java : 180] Initializing Spring embedded WebApplicationContext
+2022-01-20 17:04:33,010 INFO [localhost-startStop-1] o.s.web.context.ContextLoader [ServletWebServerApplicationContext.java : 285] Root WebApplicationContext: initialization completed in 1765 ms
+2022-01-20 17:04:33,178 INFO [localhost-startStop-1] o.s.b.w.s.ServletRegistrationBean [ServletRegistrationBean.java : 186] Servlet statViewServlet mapped to [/druid/*]
+2022-01-20 17:04:33,179 INFO [localhost-startStop-1] o.s.b.w.s.ServletRegistrationBean [ServletRegistrationBean.java : 186] Servlet dispatcherServlet mapped to [/]
+2022-01-20 17:04:33,182 INFO [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean [AbstractFilterRegistrationBean.java : 245] Mapping filter: 'characterEncodingFilter' to: [/*]
+2022-01-20 17:04:33,182 INFO [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean [AbstractFilterRegistrationBean.java : 245] Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2022-01-20 17:04:33,182 INFO [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean [AbstractFilterRegistrationBean.java : 245] Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2022-01-20 17:04:33,183 INFO [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean [AbstractFilterRegistrationBean.java : 245] Mapping filter: 'requestContextFilter' to: [/*]
+2022-01-20 17:04:33,183 INFO [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean [AbstractFilterRegistrationBean.java : 258] Mapping filter: 'webStatFilter' to urls: [/*]
+2022-01-20 17:04:33,183 INFO [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean [AbstractFilterRegistrationBean.java : 245] Mapping filter: 'shiroFilterFactoryBean' to: [/*]
+2022-01-20 17:04:33,218 DEBUG [main] c.b.c.c.ApplicationContextRegister [ApplicationContextRegister.java : 29] ApplicationContext registed-->org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4b7e96a: startup date [Thu Jan 20 17:04:31 CST 2022]; root of context hierarchy
+2022-01-20 17:04:34,041 INFO [main] c.alibaba.druid.pool.DruidDataSource [Log4j2Impl.java : 106] {dataSource-1} inited
+2022-01-20 17:04:34,113 WARN [main] o.m.spring.SqlSessionFactoryBean [Logger.java : 44] Can't find class in '[com.bootdo.**.domain]' package. Please check your configuration.
+2022-01-20 17:04:34,387 WARN [main] n.s.e.config.ConfigurationFactory [ConfigurationFactory.java : 136] No configuration found. Configuring ehcache from ehcache-failsafe.xml  found in the classpath: jar:file:/Users/mac/.m2/repository/net/sf/ehcache/ehcache/2.10.5/ehcache-2.10.5.jar!/ehcache-failsafe.xml
+2022-01-20 17:04:34,566 INFO [main] o.s.w.s.h.SimpleUrlHandlerMapping [AbstractUrlHandlerMapping.java : 373] Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2022-01-20 17:04:34,848 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerAdapter [RequestMappingHandlerAdapter.java : 574] Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4b7e96a: startup date [Thu Jan 20 17:04:31 CST 2022]; root of context hierarchy
+2022-01-20 17:04:34,902 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java : 547] Mapped "{[/file/upload],methods=[POST]}" onto public com.bootdo.common.domain.entity.Response com.bootdo.controller.FileController.uploadFile(org.springframework.web.multipart.MultipartFile)
+2022-01-20 17:04:34,905 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java : 547] Mapped "{[/logout],methods=[GET]}" onto public java.lang.String com.bootdo.controller.LoginController.logout()
+2022-01-20 17:04:34,905 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java : 547] Mapped "{[/ || ],methods=[GET]}" onto public java.lang.String com.bootdo.controller.LoginController.welcome(org.springframework.ui.Model)
+2022-01-20 17:04:34,905 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java : 547] Mapped "{[/login],methods=[GET]}" onto public java.lang.String com.bootdo.controller.LoginController.login(org.springframework.ui.Model)
+2022-01-20 17:04:34,905 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java : 547] Mapped "{[/FontIcoList],methods=[GET]}" onto public java.lang.String com.bootdo.controller.LoginController.fontIcoList()
+2022-01-20 17:04:34,906 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java : 547] Mapped "{[/login],methods=[POST]}" onto public com.bootdo.common.utils.R com.bootdo.controller.LoginController.ajaxLogin(java.lang.String,java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest)
+2022-01-20 17:04:34,906 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java : 547] Mapped "{[/getVerify],methods=[GET]}" onto public void com.bootdo.controller.LoginController.getVerify(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2022-01-20 17:04:34,906 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java : 547] Mapped "{[/index],methods=[GET]}" onto public java.lang.String com.bootdo.controller.LoginController.index(org.springframework.ui.Model)
+2022-01-20 17:04:34,906 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java : 547] Mapped "{[/main],methods=[GET]}" onto public java.lang.String com.bootdo.controller.LoginController.main()
+2022-01-20 17:04:34,907 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java : 547] Mapped "{[/sys/menu],methods=[GET]}" onto java.lang.String com.bootdo.controller.MenuController.menu(org.springframework.ui.Model)
+2022-01-20 17:04:34,908 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java : 547] Mapped "{[/sys/menu/list]}" onto java.util.List<com.bootdo.common.domain.entity.SysMenu> com.bootdo.controller.MenuController.list()
+2022-01-20 17:04:34,908 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java : 547] Mapped "{[/sys/menu/tree],methods=[GET]}" onto com.bootdo.common.domain.model.Tree<com.bootdo.common.domain.entity.SysMenu> com.bootdo.controller.MenuController.tree()
+2022-01-20 17:04:34,908 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java : 547] Mapped "{[/sys/menu/tree/{roleId}],methods=[GET]}" onto com.bootdo.common.domain.model.Tree<com.bootdo.common.domain.entity.SysMenu> com.bootdo.controller.MenuController.tree(java.lang.Long)
+2022-01-20 17:04:34,910 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java : 547] Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2022-01-20 17:04:34,911 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java : 547] Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2022-01-20 17:04:34,954 INFO [main] o.s.w.s.h.SimpleUrlHandlerMapping [AbstractUrlHandlerMapping.java : 373] Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2022-01-20 17:04:34,955 INFO [main] o.s.w.s.h.SimpleUrlHandlerMapping [AbstractUrlHandlerMapping.java : 373] Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2022-01-20 17:04:35,015 WARN [main] o.t.templatemode.TemplateMode [TemplateMode.java : 150] [THYMELEAF][main] Template Mode 'LEGACYHTML5' is deprecated. Using Template Mode 'HTML' instead.
+2022-01-20 17:04:35,541 INFO [main] org.quartz.impl.StdSchedulerFactory [StdSchedulerFactory.java : 1184] Using default implementation for ThreadExecutor
+2022-01-20 17:04:35,552 INFO [main] o.quartz.core.SchedulerSignalerImpl [SchedulerSignalerImpl.java : 61] Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2022-01-20 17:04:35,553 INFO [main] org.quartz.core.QuartzScheduler [QuartzScheduler.java : 240] Quartz Scheduler v.2.2.1 created.
+2022-01-20 17:04:35,554 INFO [main] org.quartz.simpl.RAMJobStore [RAMJobStore.java : 155] RAMJobStore initialized.
+2022-01-20 17:04:35,554 INFO [main] org.quartz.core.QuartzScheduler [QuartzScheduler.java : 305] Scheduler meta-data: Quartz Scheduler (v2.2.1) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2022-01-20 17:04:35,555 INFO [main] org.quartz.impl.StdSchedulerFactory [StdSchedulerFactory.java : 1339] Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2022-01-20 17:04:35,555 INFO [main] org.quartz.impl.StdSchedulerFactory [StdSchedulerFactory.java : 1343] Quartz scheduler version: 2.2.1
+2022-01-20 17:04:35,555 INFO [main] org.quartz.core.QuartzScheduler [QuartzScheduler.java : 2311] JobFactory set to: org.springframework.boot.autoconfigure.quartz.AutowireCapableBeanJobFactory@1d1c63af
+2022-01-20 17:04:35,646 INFO [main] o.s.j.e.a.AnnotationMBeanExporter [MBeanExporter.java : 433] Registering beans for JMX exposure on startup
+2022-01-20 17:04:35,647 INFO [main] o.s.j.e.a.AnnotationMBeanExporter [MBeanExporter.java : 895] Bean with name 'fdfsConnectionPool' has been autodetected for JMX exposure
+2022-01-20 17:04:35,647 INFO [main] o.s.j.e.a.AnnotationMBeanExporter [MBeanExporter.java : 895] Bean with name 'dataSource' has been autodetected for JMX exposure
+2022-01-20 17:04:35,652 INFO [main] o.s.j.e.a.AnnotationMBeanExporter [MBeanExporter.java : 668] Located MBean 'fdfsConnectionPool': registering with JMX server as MBean [com.github.tobato.fastdfs.conn:name=fdfsConnectionPool,type=FdfsConnectionPool]
+2022-01-20 17:04:35,653 INFO [main] o.s.j.e.a.AnnotationMBeanExporter [MBeanExporter.java : 668] Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2022-01-20 17:04:35,656 INFO [main] o.s.c.s.DefaultLifecycleProcessor [DefaultLifecycleProcessor.java : 351] Starting beans in phase 2147483647
+2022-01-20 17:04:35,657 INFO [main] o.s.s.quartz.SchedulerFactoryBean [SchedulerFactoryBean.java : 700] Starting Quartz Scheduler now
+2022-01-20 17:04:35,657 INFO [main] org.quartz.core.QuartzScheduler [QuartzScheduler.java : 575] Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2022-01-20 17:04:35,663 INFO [main] o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java : 180] Starting ProtocolHandler ["http-nio-8081"]
+2022-01-20 17:04:35,679 INFO [main] o.a.tomcat.util.net.NioSelectorPool [DirectJDKLog.java : 180] Using a shared selector for servlet write/read
+2022-01-20 17:04:35,691 INFO [main] o.s.b.w.e.tomcat.TomcatWebServer [TomcatWebServer.java : 206] Tomcat started on port(s): 8081 (http) with context path '/bootdo'
+2022-01-20 17:04:35,695 INFO [main] com.bootdo.BootdoApplication [StartupInfoLogger.java : 59] Started BootdoApplication in 5.035 seconds (JVM running for 5.666)
+2022-01-20 17:05:22,553 INFO [http-nio-8081-exec-1] o.a.c.c.C.[.[localhost].[/bootdo] [DirectJDKLog.java : 180] Initializing Spring FrameworkServlet 'dispatcherServlet'
+2022-01-20 17:05:22,554 INFO [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet [FrameworkServlet.java : 494] FrameworkServlet 'dispatcherServlet': initialization started
+2022-01-20 17:05:22,574 INFO [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet [FrameworkServlet.java : 509] FrameworkServlet 'dispatcherServlet': initialization completed in 20 ms
+2022-01-20 17:05:22,586 INFO [http-nio-8081-exec-1] o.a.s.s.m.AbstractValidatingSessionManager [AbstractValidatingSessionManager.java : 233] Enabling session validation scheduler...
+2022-01-20 17:05:22,919 INFO [http-nio-8081-exec-2] c.bootdo.common.aspect.WebLogAspect [WebLogAspect.java : 33] 请求地址 : http://localhost:8081/bootdo/login;JSESSIONID=e6d26825-df9e-4d97-ad19-cf5195f81e4f
+2022-01-20 17:05:22,920 INFO [http-nio-8081-exec-2] c.bootdo.common.aspect.WebLogAspect [WebLogAspect.java : 34] HTTP METHOD : GET
+2022-01-20 17:05:22,921 INFO [http-nio-8081-exec-2] c.bootdo.common.aspect.WebLogAspect [WebLogAspect.java : 35] CLASS_METHOD : com.bootdo.controller.LoginController.login
+2022-01-20 17:05:22,921 INFO [http-nio-8081-exec-2] c.bootdo.common.aspect.WebLogAspect [WebLogAspect.java : 37] 参数 : [{}]
+2022-01-20 17:05:22,924 INFO [http-nio-8081-exec-2] c.bootdo.common.aspect.WebLogAspect [WebLogAspect.java : 51] 耗时 : 5
+2022-01-20 17:05:22,925 DEBUG [http-nio-8081-exec-2] c.bootdo.common.aspect.WebLogAspect [WebLogAspect.java : 44] 返回值 : login
+2022-01-20 17:05:23,452 INFO [http-nio-8081-exec-3] c.bootdo.common.aspect.WebLogAspect [WebLogAspect.java : 33] 请求地址 : http://localhost:8081/bootdo/getVerify
+2022-01-20 17:05:23,452 INFO [http-nio-8081-exec-3] c.bootdo.common.aspect.WebLogAspect [WebLogAspect.java : 34] HTTP METHOD : GET
+2022-01-20 17:05:23,453 INFO [http-nio-8081-exec-3] c.bootdo.common.aspect.WebLogAspect [WebLogAspect.java : 35] CLASS_METHOD : com.bootdo.controller.LoginController.getVerify
+2022-01-20 17:05:23,453 INFO [http-nio-8081-exec-3] c.bootdo.common.aspect.WebLogAspect [WebLogAspect.java : 37] 参数 : [org.apache.shiro.web.servlet.ShiroHttpServletRequest@4b5f2037, org.apache.shiro.web.servlet.ShiroHttpServletResponse@dc3a40]
+2022-01-20 17:05:24,484 INFO [http-nio-8081-exec-4] c.bootdo.common.aspect.WebLogAspect [WebLogAspect.java : 33] 请求地址 : http://localhost:8081/bootdo/login
+2022-01-20 17:05:24,484 INFO [http-nio-8081-exec-4] c.bootdo.common.aspect.WebLogAspect [WebLogAspect.java : 34] HTTP METHOD : POST
+2022-01-20 17:05:24,484 INFO [http-nio-8081-exec-4] c.bootdo.common.aspect.WebLogAspect [WebLogAspect.java : 35] CLASS_METHOD : com.bootdo.controller.LoginController.ajaxLogin
+2022-01-20 17:05:24,484 INFO [http-nio-8081-exec-4] c.bootdo.common.aspect.WebLogAspect [WebLogAspect.java : 37] 参数 : [admin, 123456, , org.apache.shiro.web.servlet.ShiroHttpServletRequest@18212ef9]
+2022-01-20 17:05:24,560 DEBUG [http-nio-8081-exec-4] c.b.mapper.SysUserMapper.selectOne [BaseJdbcLogger.java : 159] ==>  Preparing: SELECT id,username,name,password,status,create_id,create_date,update_id,update_date FROM sys_user WHERE username = ? 
+2022-01-20 17:05:24,643 DEBUG [http-nio-8081-exec-4] c.b.mapper.SysUserMapper.selectOne [BaseJdbcLogger.java : 159] ==> Parameters: admin(String)
+2022-01-20 17:05:24,672 DEBUG [http-nio-8081-exec-4] c.b.mapper.SysUserMapper.selectOne [BaseJdbcLogger.java : 159] <==      Total: 1
+2022-01-20 17:05:24,732 INFO [http-nio-8081-exec-3] c.b.c.utils.RandomValidateCodeUtil [RandomValidateCodeUtil.java : 76] 0960
+2022-01-20 17:05:24,800 INFO [http-nio-8081-exec-4] c.bootdo.common.aspect.WebLogAspect [WebLogAspect.java : 51] 耗时 : 316
+2022-01-20 17:05:24,801 DEBUG [http-nio-8081-exec-4] c.bootdo.common.aspect.WebLogAspect [WebLogAspect.java : 44] 返回值 : {msg=操作成功, code=0}
+2022-01-20 17:05:24,848 INFO [http-nio-8081-exec-3] c.bootdo.common.aspect.WebLogAspect [WebLogAspect.java : 51] 耗时 : 1397
+2022-01-20 17:05:24,848 DEBUG [http-nio-8081-exec-3] c.bootdo.common.aspect.WebLogAspect [WebLogAspect.java : 44] 返回值 : null
+2022-01-20 17:05:25,016 INFO [http-nio-8081-exec-5] c.bootdo.common.aspect.WebLogAspect [WebLogAspect.java : 33] 请求地址 : http://localhost:8081/bootdo//index
+2022-01-20 17:05:25,017 INFO [http-nio-8081-exec-5] c.bootdo.common.aspect.WebLogAspect [WebLogAspect.java : 34] HTTP METHOD : GET
+2022-01-20 17:05:25,017 INFO [http-nio-8081-exec-5] c.bootdo.common.aspect.WebLogAspect [WebLogAspect.java : 35] CLASS_METHOD : com.bootdo.controller.LoginController.index
+2022-01-20 17:05:25,017 INFO [http-nio-8081-exec-5] c.bootdo.common.aspect.WebLogAspect [WebLogAspect.java : 37] 参数 : [{}]
+2022-01-20 17:05:25,031 INFO [http-nio-8081-exec-5] c.bootdo.common.aspect.WebLogAspect [WebLogAspect.java : 51] 耗时 : 15
+2022-01-20 17:05:25,031 DEBUG [http-nio-8081-exec-5] c.bootdo.common.aspect.WebLogAspect [WebLogAspect.java : 44] 返回值 : index_v1
+2022-01-20 17:05:25,228 INFO [http-nio-8081-exec-6] c.bootdo.common.aspect.WebLogAspect [WebLogAspect.java : 33] 请求地址 : http://localhost:8081/bootdo/main
+2022-01-20 17:05:25,229 INFO [http-nio-8081-exec-6] c.bootdo.common.aspect.WebLogAspect [WebLogAspect.java : 34] HTTP METHOD : GET
+2022-01-20 17:05:25,229 INFO [http-nio-8081-exec-6] c.bootdo.common.aspect.WebLogAspect [WebLogAspect.java : 35] CLASS_METHOD : com.bootdo.controller.LoginController.main
+2022-01-20 17:05:25,229 INFO [http-nio-8081-exec-6] c.bootdo.common.aspect.WebLogAspect [WebLogAspect.java : 37] 参数 : []
+2022-01-20 17:05:25,229 INFO [http-nio-8081-exec-6] c.bootdo.common.aspect.WebLogAspect [WebLogAspect.java : 51] 耗时 : 1
+2022-01-20 17:05:25,229 DEBUG [http-nio-8081-exec-6] c.bootdo.common.aspect.WebLogAspect [WebLogAspect.java : 44] 返回值 : main
+2022-01-20 17:05:25,323 INFO [http-nio-8081-exec-8] c.bootdo.common.aspect.WebLogAspect [WebLogAspect.java : 33] 请求地址 : http://localhost:8081/bootdo/main
+2022-01-20 17:05:25,323 INFO [http-nio-8081-exec-8] c.bootdo.common.aspect.WebLogAspect [WebLogAspect.java : 34] HTTP METHOD : GET
+2022-01-20 17:05:25,323 INFO [http-nio-8081-exec-8] c.bootdo.common.aspect.WebLogAspect [WebLogAspect.java : 35] CLASS_METHOD : com.bootdo.controller.LoginController.main
+2022-01-20 17:05:25,323 INFO [http-nio-8081-exec-8] c.bootdo.common.aspect.WebLogAspect [WebLogAspect.java : 37] 参数 : []
+2022-01-20 17:05:25,323 INFO [http-nio-8081-exec-8] c.bootdo.common.aspect.WebLogAspect [WebLogAspect.java : 51] 耗时 : 0
+2022-01-20 17:05:25,324 DEBUG [http-nio-8081-exec-8] c.bootdo.common.aspect.WebLogAspect [WebLogAspect.java : 44] 返回值 : main
+2022-01-20 17:05:37,427 INFO [http-nio-8081-exec-4] c.bootdo.common.aspect.WebLogAspect [WebLogAspect.java : 33] 请求地址 : http://localhost:8081/bootdo//index
+2022-01-20 17:05:37,428 INFO [http-nio-8081-exec-4] c.bootdo.common.aspect.WebLogAspect [WebLogAspect.java : 34] HTTP METHOD : GET
+2022-01-20 17:05:37,428 INFO [http-nio-8081-exec-4] c.bootdo.common.aspect.WebLogAspect [WebLogAspect.java : 35] CLASS_METHOD : com.bootdo.controller.LoginController.index
+2022-01-20 17:05:37,428 INFO [http-nio-8081-exec-4] c.bootdo.common.aspect.WebLogAspect [WebLogAspect.java : 37] 参数 : [{}]
+2022-01-20 17:05:37,440 INFO [http-nio-8081-exec-4] c.bootdo.common.aspect.WebLogAspect [WebLogAspect.java : 51] 耗时 : 13
+2022-01-20 17:05:37,441 DEBUG [http-nio-8081-exec-4] c.bootdo.common.aspect.WebLogAspect [WebLogAspect.java : 44] 返回值 : index_v1
+2022-01-20 17:05:37,622 INFO [http-nio-8081-exec-3] c.bootdo.common.aspect.WebLogAspect [WebLogAspect.java : 33] 请求地址 : http://localhost:8081/bootdo/main
+2022-01-20 17:05:37,622 INFO [http-nio-8081-exec-3] c.bootdo.common.aspect.WebLogAspect [WebLogAspect.java : 34] HTTP METHOD : GET
+2022-01-20 17:05:37,622 INFO [http-nio-8081-exec-3] c.bootdo.common.aspect.WebLogAspect [WebLogAspect.java : 35] CLASS_METHOD : com.bootdo.controller.LoginController.main
+2022-01-20 17:05:37,622 INFO [http-nio-8081-exec-3] c.bootdo.common.aspect.WebLogAspect [WebLogAspect.java : 37] 参数 : []
+2022-01-20 17:05:37,623 INFO [http-nio-8081-exec-3] c.bootdo.common.aspect.WebLogAspect [WebLogAspect.java : 51] 耗时 : 1
+2022-01-20 17:05:37,623 DEBUG [http-nio-8081-exec-3] c.bootdo.common.aspect.WebLogAspect [WebLogAspect.java : 44] 返回值 : main
+2022-01-20 17:05:37,733 INFO [http-nio-8081-exec-8] c.bootdo.common.aspect.WebLogAspect [WebLogAspect.java : 33] 请求地址 : http://localhost:8081/bootdo/main
+2022-01-20 17:05:37,733 INFO [http-nio-8081-exec-8] c.bootdo.common.aspect.WebLogAspect [WebLogAspect.java : 34] HTTP METHOD : GET
+2022-01-20 17:05:37,733 INFO [http-nio-8081-exec-8] c.bootdo.common.aspect.WebLogAspect [WebLogAspect.java : 35] CLASS_METHOD : com.bootdo.controller.LoginController.main
+2022-01-20 17:05:37,733 INFO [http-nio-8081-exec-8] c.bootdo.common.aspect.WebLogAspect [WebLogAspect.java : 37] 参数 : []
+2022-01-20 17:05:37,734 INFO [http-nio-8081-exec-8] c.bootdo.common.aspect.WebLogAspect [WebLogAspect.java : 51] 耗时 : 1
+2022-01-20 17:05:37,734 DEBUG [http-nio-8081-exec-8] c.bootdo.common.aspect.WebLogAspect [WebLogAspect.java : 44] 返回值 : main
+2022-01-20 17:06:43,311 INFO [http-nio-8081-exec-7] c.bootdo.common.aspect.WebLogAspect [WebLogAspect.java : 33] 请求地址 : http://localhost:8081/bootdo//index
+2022-01-20 17:06:43,312 INFO [http-nio-8081-exec-7] c.bootdo.common.aspect.WebLogAspect [WebLogAspect.java : 34] HTTP METHOD : GET
+2022-01-20 17:06:43,312 INFO [http-nio-8081-exec-7] c.bootdo.common.aspect.WebLogAspect [WebLogAspect.java : 35] CLASS_METHOD : com.bootdo.controller.LoginController.index
+2022-01-20 17:06:43,312 INFO [http-nio-8081-exec-7] c.bootdo.common.aspect.WebLogAspect [WebLogAspect.java : 37] 参数 : [{}]
+2022-01-20 17:06:43,324 INFO [http-nio-8081-exec-7] c.bootdo.common.aspect.WebLogAspect [WebLogAspect.java : 51] 耗时 : 13
+2022-01-20 17:06:43,325 DEBUG [http-nio-8081-exec-7] c.bootdo.common.aspect.WebLogAspect [WebLogAspect.java : 44] 返回值 : index_v1
+2022-01-20 17:06:43,504 INFO [http-nio-8081-exec-3] c.bootdo.common.aspect.WebLogAspect [WebLogAspect.java : 33] 请求地址 : http://localhost:8081/bootdo/main
+2022-01-20 17:06:43,504 INFO [http-nio-8081-exec-3] c.bootdo.common.aspect.WebLogAspect [WebLogAspect.java : 34] HTTP METHOD : GET
+2022-01-20 17:06:43,504 INFO [http-nio-8081-exec-3] c.bootdo.common.aspect.WebLogAspect [WebLogAspect.java : 35] CLASS_METHOD : com.bootdo.controller.LoginController.main
+2022-01-20 17:06:43,505 INFO [http-nio-8081-exec-3] c.bootdo.common.aspect.WebLogAspect [WebLogAspect.java : 37] 参数 : []
+2022-01-20 17:06:43,505 INFO [http-nio-8081-exec-3] c.bootdo.common.aspect.WebLogAspect [WebLogAspect.java : 51] 耗时 : 1
+2022-01-20 17:06:43,505 DEBUG [http-nio-8081-exec-3] c.bootdo.common.aspect.WebLogAspect [WebLogAspect.java : 44] 返回值 : main
+2022-01-20 17:06:43,598 INFO [http-nio-8081-exec-5] c.bootdo.common.aspect.WebLogAspect [WebLogAspect.java : 33] 请求地址 : http://localhost:8081/bootdo/main
+2022-01-20 17:06:43,599 INFO [http-nio-8081-exec-5] c.bootdo.common.aspect.WebLogAspect [WebLogAspect.java : 34] HTTP METHOD : GET
+2022-01-20 17:06:43,599 INFO [http-nio-8081-exec-5] c.bootdo.common.aspect.WebLogAspect [WebLogAspect.java : 35] CLASS_METHOD : com.bootdo.controller.LoginController.main
+2022-01-20 17:06:43,600 INFO [http-nio-8081-exec-5] c.bootdo.common.aspect.WebLogAspect [WebLogAspect.java : 37] 参数 : []
+2022-01-20 17:06:43,600 INFO [http-nio-8081-exec-5] c.bootdo.common.aspect.WebLogAspect [WebLogAspect.java : 51] 耗时 : 2
+2022-01-20 17:06:43,600 DEBUG [http-nio-8081-exec-5] c.bootdo.common.aspect.WebLogAspect [WebLogAspect.java : 44] 返回值 : main
+2022-01-20 17:07:58,482 INFO [Thread-7] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext [AbstractApplicationContext.java : 993] Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4b7e96a: startup date [Thu Jan 20 17:04:31 CST 2022]; root of context hierarchy
+2022-01-20 17:07:58,485 INFO [Thread-7] o.s.c.s.DefaultLifecycleProcessor [DefaultLifecycleProcessor.java : 366] Stopping beans in phase 2147483647
+2022-01-20 17:07:58,486 INFO [Thread-7] org.quartz.core.QuartzScheduler [QuartzScheduler.java : 613] Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2022-01-20 17:07:58,487 INFO [Thread-7] o.s.s.quartz.SchedulerFactoryBean [SchedulerFactoryBean.java : 824] Shutting down Quartz Scheduler
+2022-01-20 17:07:58,488 INFO [Thread-7] org.quartz.core.QuartzScheduler [QuartzScheduler.java : 694] Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2022-01-20 17:07:58,488 INFO [Thread-7] org.quartz.core.QuartzScheduler [QuartzScheduler.java : 613] Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2022-01-20 17:07:58,489 INFO [Thread-7] org.quartz.core.QuartzScheduler [QuartzScheduler.java : 771] Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2022-01-20 17:07:58,495 INFO [Thread-7] o.s.j.e.a.AnnotationMBeanExporter [MBeanExporter.java : 451] Unregistering JMX-exposed beans on shutdown
+2022-01-20 17:07:58,495 INFO [Thread-7] o.s.j.e.a.AnnotationMBeanExporter [MBeanRegistrationSupport.java : 183] Unregistering JMX-exposed beans
+2022-01-20 17:07:58,495 WARN [Thread-7] o.s.j.e.a.AnnotationMBeanExporter [MBeanRegistrationSupport.java : 208] Could not unregister MBean [com.github.tobato.fastdfs.conn:name=fdfsConnectionPool,type=FdfsConnectionPool] as said MBean is not registered (perhaps already unregistered by an external process)
+2022-01-20 17:07:58,498 INFO [Thread-7] c.alibaba.druid.pool.DruidDataSource [Log4j2Impl.java : 106] {dataSource-1} closed
+2022-01-20 17:07:58,515 INFO [Thread-7] o.a.s.s.m.AbstractValidatingSessionManager [AbstractValidatingSessionManager.java : 250] Disabled session validation scheduler.
+2022-01-20 17:08:03,660 INFO [main] com.bootdo.BootdoApplication [StartupInfoLogger.java : 50] Starting BootdoApplication on macdeMac-mini.local with PID 45380 (/Users/mac/rory/gitwork/zyl-bs/med/target/classes started by mac in /Users/mac/rory/gitwork/zyl-bs/med)
+2022-01-20 17:08:03,665 DEBUG [main] com.bootdo.BootdoApplication [StartupInfoLogger.java : 53] Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+2022-01-20 17:08:03,667 INFO [main] com.bootdo.BootdoApplication [SpringApplication.java : 663] The following profiles are active: dev
+2022-01-20 17:08:03,755 INFO [main] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext [AbstractApplicationContext.java : 590] Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4bd1f8dd: startup date [Thu Jan 20 17:08:03 CST 2022]; root of context hierarchy
+2022-01-20 17:08:04,354 WARN [main] o.m.s.mapper.ClassPathMapperScanner [Logger.java : 44] No MyBatis mapper was found in '[com.bootdo.*.dao]' package. Please check your configuration.
+2022-01-20 17:08:04,497 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java : 163] Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-01-20 17:08:04,957 INFO [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java : 328] Bean 'shiroConfig' of type [com.bootdo.common.config.ShiroConfig$$EnhancerBySpringCGLIB$$97bfef66] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-01-20 17:08:05,199 INFO [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java : 328] Bean 'userRealm' of type [com.bootdo.common.config.UserRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-01-20 17:08:05,239 INFO [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java : 328] Bean 'redisManager' of type [com.bootdo.common.config.RedisManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-01-20 17:08:05,242 DEBUG [main] c.b.common.config.RedisCacheManager [RedisCacheManager.java : 52] 获取名称为: com.bootdo.common.config.UserRealm.authorizationCache 的RedisCache实例
+2022-01-20 17:08:05,255 INFO [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java : 328] Bean 'redisSessionDAO' of type [com.bootdo.common.config.RedisSessionDAO] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-01-20 17:08:05,260 INFO [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java : 328] Bean 'sessionDAO' of type [com.bootdo.common.config.RedisSessionDAO] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-01-20 17:08:05,274 INFO [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java : 328] Bean 'sessionManager' of type [org.apache.shiro.web.session.mgt.DefaultWebSessionManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-01-20 17:08:05,305 INFO [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java : 328] Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-01-20 17:08:05,347 INFO [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java : 328] Bean 'authorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-01-20 17:08:05,355 INFO [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java : 328] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$41bfc57b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-01-20 17:08:05,889 INFO [main] o.s.b.w.e.tomcat.TomcatWebServer [TomcatWebServer.java : 91] Tomcat initialized with port(s): 8081 (http)
+2022-01-20 17:08:05,902 INFO [main] o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java : 180] Initializing ProtocolHandler ["http-nio-8081"]
+2022-01-20 17:08:05,913 INFO [main] o.a.catalina.core.StandardService [DirectJDKLog.java : 180] Starting service [Tomcat]
+2022-01-20 17:08:05,914 INFO [main] o.a.catalina.core.StandardEngine [DirectJDKLog.java : 180] Starting Servlet Engine: Apache Tomcat/8.5.31
+2022-01-20 17:08:05,919 INFO [localhost-startStop-1] o.a.c.core.AprLifecycleListener [DirectJDKLog.java : 180] The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/mac/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2022-01-20 17:08:06,011 INFO [localhost-startStop-1] o.a.c.c.C.[.[localhost].[/bootdo] [DirectJDKLog.java : 180] Initializing Spring embedded WebApplicationContext
+2022-01-20 17:08:06,011 INFO [localhost-startStop-1] o.s.web.context.ContextLoader [ServletWebServerApplicationContext.java : 285] Root WebApplicationContext: initialization completed in 2256 ms
+2022-01-20 17:08:06,246 INFO [localhost-startStop-1] o.s.b.w.s.ServletRegistrationBean [ServletRegistrationBean.java : 186] Servlet statViewServlet mapped to [/druid/*]
+2022-01-20 17:08:06,247 INFO [localhost-startStop-1] o.s.b.w.s.ServletRegistrationBean [ServletRegistrationBean.java : 186] Servlet dispatcherServlet mapped to [/]
+2022-01-20 17:08:06,250 INFO [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean [AbstractFilterRegistrationBean.java : 245] Mapping filter: 'characterEncodingFilter' to: [/*]
+2022-01-20 17:08:06,251 INFO [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean [AbstractFilterRegistrationBean.java : 245] Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2022-01-20 17:08:06,251 INFO [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean [AbstractFilterRegistrationBean.java : 245] Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2022-01-20 17:08:06,251 INFO [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean [AbstractFilterRegistrationBean.java : 245] Mapping filter: 'requestContextFilter' to: [/*]
+2022-01-20 17:08:06,252 INFO [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean [AbstractFilterRegistrationBean.java : 258] Mapping filter: 'webStatFilter' to urls: [/*]
+2022-01-20 17:08:06,252 INFO [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean [AbstractFilterRegistrationBean.java : 245] Mapping filter: 'shiroFilterFactoryBean' to: [/*]
+2022-01-20 17:08:06,290 DEBUG [main] c.b.c.c.ApplicationContextRegister [ApplicationContextRegister.java : 29] ApplicationContext registed-->org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4bd1f8dd: startup date [Thu Jan 20 17:08:03 CST 2022]; root of context hierarchy
+2022-01-20 17:08:07,061 INFO [main] c.alibaba.druid.pool.DruidDataSource [Log4j2Impl.java : 106] {dataSource-1} inited
+2022-01-20 17:08:07,143 WARN [main] o.m.spring.SqlSessionFactoryBean [Logger.java : 44] Can't find class in '[com.bootdo.**.domain]' package. Please check your configuration.
+2022-01-20 17:08:07,503 WARN [main] n.s.e.config.ConfigurationFactory [ConfigurationFactory.java : 136] No configuration found. Configuring ehcache from ehcache-failsafe.xml  found in the classpath: jar:file:/Users/mac/.m2/repository/net/sf/ehcache/ehcache/2.10.5/ehcache-2.10.5.jar!/ehcache-failsafe.xml
+2022-01-20 17:08:07,686 INFO [main] o.s.w.s.h.SimpleUrlHandlerMapping [AbstractUrlHandlerMapping.java : 373] Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2022-01-20 17:08:07,999 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerAdapter [RequestMappingHandlerAdapter.java : 574] Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4bd1f8dd: startup date [Thu Jan 20 17:08:03 CST 2022]; root of context hierarchy
+2022-01-20 17:08:08,059 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java : 547] Mapped "{[/file/upload],methods=[POST]}" onto public com.bootdo.common.domain.entity.Response com.bootdo.controller.FileController.uploadFile(org.springframework.web.multipart.MultipartFile)
+2022-01-20 17:08:08,062 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java : 547] Mapped "{[/ || ],methods=[GET]}" onto public java.lang.String com.bootdo.controller.LoginController.welcome(org.springframework.ui.Model)
+2022-01-20 17:08:08,063 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java : 547] Mapped "{[/login],methods=[GET]}" onto public java.lang.String com.bootdo.controller.LoginController.login(org.springframework.ui.Model)
+2022-01-20 17:08:08,063 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java : 547] Mapped "{[/FontIcoList],methods=[GET]}" onto public java.lang.String com.bootdo.controller.LoginController.fontIcoList()
+2022-01-20 17:08:08,063 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java : 547] Mapped "{[/login],methods=[POST]}" onto public com.bootdo.common.utils.R com.bootdo.controller.LoginController.ajaxLogin(java.lang.String,java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest)
+2022-01-20 17:08:08,064 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java : 547] Mapped "{[/getVerify],methods=[GET]}" onto public void com.bootdo.controller.LoginController.getVerify(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2022-01-20 17:08:08,064 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java : 547] Mapped "{[/logout],methods=[GET]}" onto public java.lang.String com.bootdo.controller.LoginController.logout()
+2022-01-20 17:08:08,064 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java : 547] Mapped "{[/index],methods=[GET]}" onto public java.lang.String com.bootdo.controller.LoginController.index(org.springframework.ui.Model)
+2022-01-20 17:08:08,064 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java : 547] Mapped "{[/main],methods=[GET]}" onto public java.lang.String com.bootdo.controller.LoginController.main()
+2022-01-20 17:08:08,065 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java : 547] Mapped "{[/sys/menu],methods=[GET]}" onto java.lang.String com.bootdo.controller.MenuController.menu(org.springframework.ui.Model)
+2022-01-20 17:08:08,066 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java : 547] Mapped "{[/sys/menu/list]}" onto java.util.List<com.bootdo.common.domain.entity.SysMenu> com.bootdo.controller.MenuController.list()
+2022-01-20 17:08:08,066 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java : 547] Mapped "{[/sys/menu/tree],methods=[GET]}" onto com.bootdo.common.domain.model.Tree<com.bootdo.common.domain.entity.SysMenu> com.bootdo.controller.MenuController.tree()
+2022-01-20 17:08:08,066 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java : 547] Mapped "{[/sys/menu/tree/{roleId}],methods=[GET]}" onto com.bootdo.common.domain.model.Tree<com.bootdo.common.domain.entity.SysMenu> com.bootdo.controller.MenuController.tree(java.lang.Long)
+2022-01-20 17:08:08,069 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java : 547] Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2022-01-20 17:08:08,069 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java : 547] Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2022-01-20 17:08:08,119 INFO [main] o.s.w.s.h.SimpleUrlHandlerMapping [AbstractUrlHandlerMapping.java : 373] Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2022-01-20 17:08:08,119 INFO [main] o.s.w.s.h.SimpleUrlHandlerMapping [AbstractUrlHandlerMapping.java : 373] Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2022-01-20 17:08:08,190 WARN [main] o.t.templatemode.TemplateMode [TemplateMode.java : 150] [THYMELEAF][main] Template Mode 'LEGACYHTML5' is deprecated. Using Template Mode 'HTML' instead.
+2022-01-20 17:08:08,951 INFO [main] org.quartz.impl.StdSchedulerFactory [StdSchedulerFactory.java : 1184] Using default implementation for ThreadExecutor
+2022-01-20 17:08:08,960 INFO [main] o.quartz.core.SchedulerSignalerImpl [SchedulerSignalerImpl.java : 61] Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2022-01-20 17:08:08,961 INFO [main] org.quartz.core.QuartzScheduler [QuartzScheduler.java : 240] Quartz Scheduler v.2.2.1 created.
+2022-01-20 17:08:08,961 INFO [main] org.quartz.simpl.RAMJobStore [RAMJobStore.java : 155] RAMJobStore initialized.
+2022-01-20 17:08:08,962 INFO [main] org.quartz.core.QuartzScheduler [QuartzScheduler.java : 305] Scheduler meta-data: Quartz Scheduler (v2.2.1) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2022-01-20 17:08:08,962 INFO [main] org.quartz.impl.StdSchedulerFactory [StdSchedulerFactory.java : 1339] Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2022-01-20 17:08:08,962 INFO [main] org.quartz.impl.StdSchedulerFactory [StdSchedulerFactory.java : 1343] Quartz scheduler version: 2.2.1
+2022-01-20 17:08:08,962 INFO [main] org.quartz.core.QuartzScheduler [QuartzScheduler.java : 2311] JobFactory set to: org.springframework.boot.autoconfigure.quartz.AutowireCapableBeanJobFactory@2bc2e022
+2022-01-20 17:08:09,067 INFO [main] o.s.j.e.a.AnnotationMBeanExporter [MBeanExporter.java : 433] Registering beans for JMX exposure on startup
+2022-01-20 17:08:09,068 INFO [main] o.s.j.e.a.AnnotationMBeanExporter [MBeanExporter.java : 895] Bean with name 'fdfsConnectionPool' has been autodetected for JMX exposure
+2022-01-20 17:08:09,069 INFO [main] o.s.j.e.a.AnnotationMBeanExporter [MBeanExporter.java : 895] Bean with name 'dataSource' has been autodetected for JMX exposure
+2022-01-20 17:08:09,076 INFO [main] o.s.j.e.a.AnnotationMBeanExporter [MBeanExporter.java : 668] Located MBean 'fdfsConnectionPool': registering with JMX server as MBean [com.github.tobato.fastdfs.conn:name=fdfsConnectionPool,type=FdfsConnectionPool]
+2022-01-20 17:08:09,077 INFO [main] o.s.j.e.a.AnnotationMBeanExporter [MBeanExporter.java : 668] Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2022-01-20 17:08:09,082 INFO [main] o.s.c.s.DefaultLifecycleProcessor [DefaultLifecycleProcessor.java : 351] Starting beans in phase 2147483647
+2022-01-20 17:08:09,082 INFO [main] o.s.s.quartz.SchedulerFactoryBean [SchedulerFactoryBean.java : 700] Starting Quartz Scheduler now
+2022-01-20 17:08:09,082 INFO [main] org.quartz.core.QuartzScheduler [QuartzScheduler.java : 575] Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2022-01-20 17:08:09,090 INFO [main] o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java : 180] Starting ProtocolHandler ["http-nio-8081"]
+2022-01-20 17:08:09,109 INFO [main] o.a.tomcat.util.net.NioSelectorPool [DirectJDKLog.java : 180] Using a shared selector for servlet write/read
+2022-01-20 17:08:09,121 INFO [main] o.s.b.w.e.tomcat.TomcatWebServer [TomcatWebServer.java : 206] Tomcat started on port(s): 8081 (http) with context path '/bootdo'
+2022-01-20 17:08:09,125 INFO [main] com.bootdo.BootdoApplication [StartupInfoLogger.java : 59] Started BootdoApplication in 5.942 seconds (JVM running for 6.568)
+2022-01-20 17:08:59,993 INFO [Thread-7] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext [AbstractApplicationContext.java : 993] Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4bd1f8dd: startup date [Thu Jan 20 17:08:03 CST 2022]; root of context hierarchy
+2022-01-20 17:08:59,996 INFO [Thread-7] o.s.c.s.DefaultLifecycleProcessor [DefaultLifecycleProcessor.java : 366] Stopping beans in phase 2147483647
+2022-01-20 17:08:59,997 INFO [Thread-7] org.quartz.core.QuartzScheduler [QuartzScheduler.java : 613] Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2022-01-20 17:08:59,999 INFO [Thread-7] o.s.s.quartz.SchedulerFactoryBean [SchedulerFactoryBean.java : 824] Shutting down Quartz Scheduler
+2022-01-20 17:08:59,999 INFO [Thread-7] org.quartz.core.QuartzScheduler [QuartzScheduler.java : 694] Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2022-01-20 17:08:59,999 INFO [Thread-7] org.quartz.core.QuartzScheduler [QuartzScheduler.java : 613] Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2022-01-20 17:09:00,000 INFO [Thread-7] org.quartz.core.QuartzScheduler [QuartzScheduler.java : 771] Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2022-01-20 17:09:00,006 INFO [Thread-7] o.s.j.e.a.AnnotationMBeanExporter [MBeanExporter.java : 451] Unregistering JMX-exposed beans on shutdown
+2022-01-20 17:09:00,006 INFO [Thread-7] o.s.j.e.a.AnnotationMBeanExporter [MBeanRegistrationSupport.java : 183] Unregistering JMX-exposed beans
+2022-01-20 17:09:00,007 WARN [Thread-7] o.s.j.e.a.AnnotationMBeanExporter [MBeanRegistrationSupport.java : 208] Could not unregister MBean [com.github.tobato.fastdfs.conn:name=fdfsConnectionPool,type=FdfsConnectionPool] as said MBean is not registered (perhaps already unregistered by an external process)
+2022-01-20 17:09:00,010 INFO [Thread-7] c.alibaba.druid.pool.DruidDataSource [Log4j2Impl.java : 106] {dataSource-1} closed
+2022-01-20 17:09:04,680 INFO [main] com.bootdo.BootdoApplication [StartupInfoLogger.java : 50] Starting BootdoApplication on macdeMac-mini.local with PID 45395 (/Users/mac/rory/gitwork/zyl-bs/med/target/classes started by mac in /Users/mac/rory/gitwork/zyl-bs/med)
+2022-01-20 17:09:04,684 DEBUG [main] com.bootdo.BootdoApplication [StartupInfoLogger.java : 53] Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+2022-01-20 17:09:04,685 INFO [main] com.bootdo.BootdoApplication [SpringApplication.java : 663] The following profiles are active: dev
+2022-01-20 17:09:04,755 INFO [main] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext [AbstractApplicationContext.java : 590] Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6d9f7a80: startup date [Thu Jan 20 17:09:04 CST 2022]; root of context hierarchy
+2022-01-20 17:09:05,175 WARN [main] o.m.s.mapper.ClassPathMapperScanner [Logger.java : 44] No MyBatis mapper was found in '[com.bootdo.*.dao]' package. Please check your configuration.
+2022-01-20 17:09:05,273 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java : 163] Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-01-20 17:09:05,621 INFO [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java : 328] Bean 'shiroConfig' of type [com.bootdo.common.config.ShiroConfig$$EnhancerBySpringCGLIB$$c08ec1f2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-01-20 17:09:05,828 INFO [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java : 328] Bean 'userRealm' of type [com.bootdo.common.config.UserRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-01-20 17:09:05,860 INFO [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java : 328] Bean 'redisManager' of type [com.bootdo.common.config.RedisManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-01-20 17:09:05,863 DEBUG [main] c.b.common.config.RedisCacheManager [RedisCacheManager.java : 52] 获取名称为: com.bootdo.common.config.UserRealm.authorizationCache 的RedisCache实例
+2022-01-20 17:09:05,877 INFO [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java : 328] Bean 'redisSessionDAO' of type [com.bootdo.common.config.RedisSessionDAO] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-01-20 17:09:05,880 INFO [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java : 328] Bean 'sessionDAO' of type [com.bootdo.common.config.RedisSessionDAO] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-01-20 17:09:05,890 INFO [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java : 328] Bean 'sessionManager' of type [org.apache.shiro.web.session.mgt.DefaultWebSessionManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-01-20 17:09:05,908 INFO [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java : 328] Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-01-20 17:09:05,931 INFO [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java : 328] Bean 'authorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-01-20 17:09:05,937 INFO [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java : 328] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$6a8e9807] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-01-20 17:09:06,239 INFO [main] o.s.b.w.e.tomcat.TomcatWebServer [TomcatWebServer.java : 91] Tomcat initialized with port(s): 8081 (http)
+2022-01-20 17:09:06,249 INFO [main] o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java : 180] Initializing ProtocolHandler ["http-nio-8081"]
+2022-01-20 17:09:06,256 INFO [main] o.a.catalina.core.StandardService [DirectJDKLog.java : 180] Starting service [Tomcat]
+2022-01-20 17:09:06,257 INFO [main] o.a.catalina.core.StandardEngine [DirectJDKLog.java : 180] Starting Servlet Engine: Apache Tomcat/8.5.31
+2022-01-20 17:09:06,260 INFO [localhost-startStop-1] o.a.c.core.AprLifecycleListener [DirectJDKLog.java : 180] The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/mac/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2022-01-20 17:09:06,330 INFO [localhost-startStop-1] o.a.c.c.C.[.[localhost].[/bootdo] [DirectJDKLog.java : 180] Initializing Spring embedded WebApplicationContext
+2022-01-20 17:09:06,330 INFO [localhost-startStop-1] o.s.web.context.ContextLoader [ServletWebServerApplicationContext.java : 285] Root WebApplicationContext: initialization completed in 1575 ms
+2022-01-20 17:09:06,516 INFO [localhost-startStop-1] o.s.b.w.s.ServletRegistrationBean [ServletRegistrationBean.java : 186] Servlet statViewServlet mapped to [/druid/*]
+2022-01-20 17:09:06,518 INFO [localhost-startStop-1] o.s.b.w.s.ServletRegistrationBean [ServletRegistrationBean.java : 186] Servlet dispatcherServlet mapped to [/]
+2022-01-20 17:09:06,521 INFO [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean [AbstractFilterRegistrationBean.java : 245] Mapping filter: 'characterEncodingFilter' to: [/*]
+2022-01-20 17:09:06,521 INFO [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean [AbstractFilterRegistrationBean.java : 245] Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2022-01-20 17:09:06,521 INFO [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean [AbstractFilterRegistrationBean.java : 245] Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2022-01-20 17:09:06,521 INFO [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean [AbstractFilterRegistrationBean.java : 245] Mapping filter: 'requestContextFilter' to: [/*]
+2022-01-20 17:09:06,522 INFO [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean [AbstractFilterRegistrationBean.java : 258] Mapping filter: 'webStatFilter' to urls: [/*]
+2022-01-20 17:09:06,522 INFO [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean [AbstractFilterRegistrationBean.java : 245] Mapping filter: 'shiroFilterFactoryBean' to: [/*]
+2022-01-20 17:09:06,554 DEBUG [main] c.b.c.c.ApplicationContextRegister [ApplicationContextRegister.java : 29] ApplicationContext registed-->org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6d9f7a80: startup date [Thu Jan 20 17:09:04 CST 2022]; root of context hierarchy
+2022-01-20 17:09:07,279 INFO [main] c.alibaba.druid.pool.DruidDataSource [Log4j2Impl.java : 106] {dataSource-1} inited
+2022-01-20 17:09:07,363 WARN [main] o.m.spring.SqlSessionFactoryBean [Logger.java : 44] Can't find class in '[com.bootdo.**.domain]' package. Please check your configuration.
+2022-01-20 17:09:07,669 WARN [main] n.s.e.config.ConfigurationFactory [ConfigurationFactory.java : 136] No configuration found. Configuring ehcache from ehcache-failsafe.xml  found in the classpath: jar:file:/Users/mac/.m2/repository/net/sf/ehcache/ehcache/2.10.5/ehcache-2.10.5.jar!/ehcache-failsafe.xml
+2022-01-20 17:09:07,880 INFO [main] o.s.w.s.h.SimpleUrlHandlerMapping [AbstractUrlHandlerMapping.java : 373] Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2022-01-20 17:09:08,169 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerAdapter [RequestMappingHandlerAdapter.java : 574] Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6d9f7a80: startup date [Thu Jan 20 17:09:04 CST 2022]; root of context hierarchy
+2022-01-20 17:09:08,221 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java : 547] Mapped "{[/file/upload],methods=[POST]}" onto public com.bootdo.common.domain.entity.Response com.bootdo.controller.FileController.uploadFile(org.springframework.web.multipart.MultipartFile)
+2022-01-20 17:09:08,224 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java : 547] Mapped "{[/logout],methods=[GET]}" onto public java.lang.String com.bootdo.controller.LoginController.logout()
+2022-01-20 17:09:08,224 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java : 547] Mapped "{[/login],methods=[GET]}" onto public java.lang.String com.bootdo.controller.LoginController.login(org.springframework.ui.Model)
+2022-01-20 17:09:08,224 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java : 547] Mapped "{[/FontIcoList],methods=[GET]}" onto public java.lang.String com.bootdo.controller.LoginController.fontIcoList()
+2022-01-20 17:09:08,224 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java : 547] Mapped "{[/ || ],methods=[GET]}" onto public java.lang.String com.bootdo.controller.LoginController.welcome(org.springframework.ui.Model)
+2022-01-20 17:09:08,225 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java : 547] Mapped "{[/login],methods=[POST]}" onto public com.bootdo.common.utils.R com.bootdo.controller.LoginController.ajaxLogin(java.lang.String,java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest)
+2022-01-20 17:09:08,225 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java : 547] Mapped "{[/getVerify],methods=[GET]}" onto public void com.bootdo.controller.LoginController.getVerify(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2022-01-20 17:09:08,225 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java : 547] Mapped "{[/index],methods=[GET]}" onto public java.lang.String com.bootdo.controller.LoginController.index(org.springframework.ui.Model)
+2022-01-20 17:09:08,225 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java : 547] Mapped "{[/main],methods=[GET]}" onto public java.lang.String com.bootdo.controller.LoginController.main()
+2022-01-20 17:09:08,227 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java : 547] Mapped "{[/sys/menu],methods=[GET]}" onto java.lang.String com.bootdo.controller.MenuController.menu(org.springframework.ui.Model)
+2022-01-20 17:09:08,227 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java : 547] Mapped "{[/sys/menu/list]}" onto java.util.List<com.bootdo.common.domain.entity.SysMenu> com.bootdo.controller.MenuController.list()
+2022-01-20 17:09:08,227 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java : 547] Mapped "{[/sys/menu/tree],methods=[GET]}" onto com.bootdo.common.domain.model.Tree<com.bootdo.common.domain.entity.SysMenu> com.bootdo.controller.MenuController.tree()
+2022-01-20 17:09:08,228 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java : 547] Mapped "{[/sys/menu/tree/{roleId}],methods=[GET]}" onto com.bootdo.common.domain.model.Tree<com.bootdo.common.domain.entity.SysMenu> com.bootdo.controller.MenuController.tree(java.lang.Long)
+2022-01-20 17:09:08,230 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java : 547] Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2022-01-20 17:09:08,230 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java : 547] Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2022-01-20 17:09:08,275 INFO [main] o.s.w.s.h.SimpleUrlHandlerMapping [AbstractUrlHandlerMapping.java : 373] Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2022-01-20 17:09:08,275 INFO [main] o.s.w.s.h.SimpleUrlHandlerMapping [AbstractUrlHandlerMapping.java : 373] Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2022-01-20 17:09:08,341 WARN [main] o.t.templatemode.TemplateMode [TemplateMode.java : 150] [THYMELEAF][main] Template Mode 'LEGACYHTML5' is deprecated. Using Template Mode 'HTML' instead.
+2022-01-20 17:09:08,891 INFO [main] org.quartz.impl.StdSchedulerFactory [StdSchedulerFactory.java : 1184] Using default implementation for ThreadExecutor
+2022-01-20 17:09:08,901 INFO [main] o.quartz.core.SchedulerSignalerImpl [SchedulerSignalerImpl.java : 61] Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2022-01-20 17:09:08,902 INFO [main] org.quartz.core.QuartzScheduler [QuartzScheduler.java : 240] Quartz Scheduler v.2.2.1 created.
+2022-01-20 17:09:08,903 INFO [main] org.quartz.simpl.RAMJobStore [RAMJobStore.java : 155] RAMJobStore initialized.
+2022-01-20 17:09:08,903 INFO [main] org.quartz.core.QuartzScheduler [QuartzScheduler.java : 305] Scheduler meta-data: Quartz Scheduler (v2.2.1) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2022-01-20 17:09:08,903 INFO [main] org.quartz.impl.StdSchedulerFactory [StdSchedulerFactory.java : 1339] Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2022-01-20 17:09:08,903 INFO [main] org.quartz.impl.StdSchedulerFactory [StdSchedulerFactory.java : 1343] Quartz scheduler version: 2.2.1
+2022-01-20 17:09:08,904 INFO [main] org.quartz.core.QuartzScheduler [QuartzScheduler.java : 2311] JobFactory set to: org.springframework.boot.autoconfigure.quartz.AutowireCapableBeanJobFactory@537451d5
+2022-01-20 17:09:09,008 INFO [main] o.s.j.e.a.AnnotationMBeanExporter [MBeanExporter.java : 433] Registering beans for JMX exposure on startup
+2022-01-20 17:09:09,008 INFO [main] o.s.j.e.a.AnnotationMBeanExporter [MBeanExporter.java : 895] Bean with name 'fdfsConnectionPool' has been autodetected for JMX exposure
+2022-01-20 17:09:09,009 INFO [main] o.s.j.e.a.AnnotationMBeanExporter [MBeanExporter.java : 895] Bean with name 'dataSource' has been autodetected for JMX exposure
+2022-01-20 17:09:09,015 INFO [main] o.s.j.e.a.AnnotationMBeanExporter [MBeanExporter.java : 668] Located MBean 'fdfsConnectionPool': registering with JMX server as MBean [com.github.tobato.fastdfs.conn:name=fdfsConnectionPool,type=FdfsConnectionPool]
+2022-01-20 17:09:09,016 INFO [main] o.s.j.e.a.AnnotationMBeanExporter [MBeanExporter.java : 668] Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2022-01-20 17:09:09,019 INFO [main] o.s.c.s.DefaultLifecycleProcessor [DefaultLifecycleProcessor.java : 351] Starting beans in phase 2147483647
+2022-01-20 17:09:09,019 INFO [main] o.s.s.quartz.SchedulerFactoryBean [SchedulerFactoryBean.java : 700] Starting Quartz Scheduler now
+2022-01-20 17:09:09,020 INFO [main] org.quartz.core.QuartzScheduler [QuartzScheduler.java : 575] Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2022-01-20 17:09:09,026 INFO [main] o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java : 180] Starting ProtocolHandler ["http-nio-8081"]
+2022-01-20 17:09:09,043 INFO [main] o.a.tomcat.util.net.NioSelectorPool [DirectJDKLog.java : 180] Using a shared selector for servlet write/read
+2022-01-20 17:09:09,054 INFO [main] o.s.b.w.e.tomcat.TomcatWebServer [TomcatWebServer.java : 206] Tomcat started on port(s): 8081 (http) with context path '/bootdo'
+2022-01-20 17:09:09,057 INFO [main] com.bootdo.BootdoApplication [StartupInfoLogger.java : 59] Started BootdoApplication in 4.768 seconds (JVM running for 5.335)
+2022-01-20 17:09:10,008 INFO [http-nio-8081-exec-1] o.a.c.c.C.[.[localhost].[/bootdo] [DirectJDKLog.java : 180] Initializing Spring FrameworkServlet 'dispatcherServlet'
+2022-01-20 17:09:10,008 INFO [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet [FrameworkServlet.java : 494] FrameworkServlet 'dispatcherServlet': initialization started
+2022-01-20 17:09:10,036 INFO [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet [FrameworkServlet.java : 509] FrameworkServlet 'dispatcherServlet': initialization completed in 28 ms
+2022-01-20 17:09:10,057 INFO [http-nio-8081-exec-1] o.a.s.s.m.AbstractValidatingSessionManager [AbstractValidatingSessionManager.java : 233] Enabling session validation scheduler...
+2022-01-20 17:09:10,402 INFO [http-nio-8081-exec-1] c.bootdo.common.aspect.WebLogAspect [WebLogAspect.java : 33] 请求地址 : http://localhost:8081/bootdo//index
+2022-01-20 17:09:10,412 INFO [http-nio-8081-exec-1] c.bootdo.common.aspect.WebLogAspect [WebLogAspect.java : 34] HTTP METHOD : GET
+2022-01-20 17:09:10,414 INFO [http-nio-8081-exec-1] c.bootdo.common.aspect.WebLogAspect [WebLogAspect.java : 35] CLASS_METHOD : com.bootdo.controller.LoginController.index
+2022-01-20 17:09:10,414 INFO [http-nio-8081-exec-1] c.bootdo.common.aspect.WebLogAspect [WebLogAspect.java : 37] 参数 : [{}]
+2022-01-20 17:09:10,462 DEBUG [http-nio-8081-exec-1] c.b.mapper.SysMenuMapper.selectList [BaseJdbcLogger.java : 159] ==>  Preparing: SELECT id,parent_id,name,url,icon,type,order_num,create_id,create_date,update_id,update_date FROM sys_menu 
+2022-01-20 17:09:10,520 DEBUG [http-nio-8081-exec-1] c.b.mapper.SysMenuMapper.selectList [BaseJdbcLogger.java : 159] ==> Parameters: 
+2022-01-20 17:09:10,544 DEBUG [http-nio-8081-exec-1] c.b.mapper.SysMenuMapper.selectList [BaseJdbcLogger.java : 159] <==      Total: 1
+2022-01-20 17:09:10,567 INFO [http-nio-8081-exec-1] c.bootdo.common.aspect.WebLogAspect [WebLogAspect.java : 51] 耗时 : 165
+2022-01-20 17:09:10,568 DEBUG [http-nio-8081-exec-1] c.bootdo.common.aspect.WebLogAspect [WebLogAspect.java : 44] 返回值 : index_v1
+2022-01-20 17:09:11,146 INFO [http-nio-8081-exec-2] c.bootdo.common.aspect.WebLogAspect [WebLogAspect.java : 33] 请求地址 : http://localhost:8081/bootdo/main
+2022-01-20 17:09:11,146 INFO [http-nio-8081-exec-2] c.bootdo.common.aspect.WebLogAspect [WebLogAspect.java : 34] HTTP METHOD : GET
+2022-01-20 17:09:11,147 INFO [http-nio-8081-exec-2] c.bootdo.common.aspect.WebLogAspect [WebLogAspect.java : 35] CLASS_METHOD : com.bootdo.controller.LoginController.main
+2022-01-20 17:09:11,147 INFO [http-nio-8081-exec-2] c.bootdo.common.aspect.WebLogAspect [WebLogAspect.java : 37] 参数 : []
+2022-01-20 17:09:11,148 INFO [http-nio-8081-exec-2] c.bootdo.common.aspect.WebLogAspect [WebLogAspect.java : 51] 耗时 : 2
+2022-01-20 17:09:11,148 DEBUG [http-nio-8081-exec-2] c.bootdo.common.aspect.WebLogAspect [WebLogAspect.java : 44] 返回值 : main
+2022-01-20 17:09:11,155 INFO [http-nio-8081-exec-4] c.bootdo.common.aspect.WebLogAspect [WebLogAspect.java : 33] 请求地址 : http://localhost:8081/bootdo/main
+2022-01-20 17:09:11,155 INFO [http-nio-8081-exec-4] c.bootdo.common.aspect.WebLogAspect [WebLogAspect.java : 34] HTTP METHOD : GET
+2022-01-20 17:09:11,155 INFO [http-nio-8081-exec-4] c.bootdo.common.aspect.WebLogAspect [WebLogAspect.java : 35] CLASS_METHOD : com.bootdo.controller.LoginController.main
+2022-01-20 17:09:11,155 INFO [http-nio-8081-exec-4] c.bootdo.common.aspect.WebLogAspect [WebLogAspect.java : 37] 参数 : []
+2022-01-20 17:09:11,155 INFO [http-nio-8081-exec-4] c.bootdo.common.aspect.WebLogAspect [WebLogAspect.java : 51] 耗时 : 0
+2022-01-20 17:09:11,156 DEBUG [http-nio-8081-exec-4] c.bootdo.common.aspect.WebLogAspect [WebLogAspect.java : 44] 返回值 : main
+2022-01-20 17:22:47,520 INFO [Thread-7] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext [AbstractApplicationContext.java : 993] Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6d9f7a80: startup date [Thu Jan 20 17:09:04 CST 2022]; root of context hierarchy
+2022-01-20 17:22:47,524 INFO [Thread-7] o.s.c.s.DefaultLifecycleProcessor [DefaultLifecycleProcessor.java : 366] Stopping beans in phase 2147483647
+2022-01-20 17:22:47,524 INFO [Thread-7] org.quartz.core.QuartzScheduler [QuartzScheduler.java : 613] Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2022-01-20 17:22:47,526 INFO [Thread-7] o.s.s.quartz.SchedulerFactoryBean [SchedulerFactoryBean.java : 824] Shutting down Quartz Scheduler
+2022-01-20 17:22:47,527 INFO [Thread-7] org.quartz.core.QuartzScheduler [QuartzScheduler.java : 694] Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2022-01-20 17:22:47,527 INFO [Thread-7] org.quartz.core.QuartzScheduler [QuartzScheduler.java : 613] Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2022-01-20 17:22:47,528 INFO [Thread-7] org.quartz.core.QuartzScheduler [QuartzScheduler.java : 771] Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2022-01-20 17:22:47,534 INFO [Thread-7] o.s.j.e.a.AnnotationMBeanExporter [MBeanExporter.java : 451] Unregistering JMX-exposed beans on shutdown
+2022-01-20 17:22:47,535 INFO [Thread-7] o.s.j.e.a.AnnotationMBeanExporter [MBeanRegistrationSupport.java : 183] Unregistering JMX-exposed beans
+2022-01-20 17:22:47,535 WARN [Thread-7] o.s.j.e.a.AnnotationMBeanExporter [MBeanRegistrationSupport.java : 208] Could not unregister MBean [com.github.tobato.fastdfs.conn:name=fdfsConnectionPool,type=FdfsConnectionPool] as said MBean is not registered (perhaps already unregistered by an external process)
+2022-01-20 17:22:47,539 INFO [Thread-7] c.alibaba.druid.pool.DruidDataSource [Log4j2Impl.java : 106] {dataSource-1} closed
+2022-01-20 17:22:47,555 INFO [Thread-7] o.a.s.s.m.AbstractValidatingSessionManager [AbstractValidatingSessionManager.java : 250] Disabled session validation scheduler.
