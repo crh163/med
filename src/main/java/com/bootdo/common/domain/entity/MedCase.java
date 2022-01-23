@@ -11,6 +11,8 @@ public class MedCase extends BaseModel implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
+    private Long userId;
+
     /**
      * 病人病情的流水号
      */
