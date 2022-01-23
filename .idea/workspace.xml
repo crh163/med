@@ -2,12 +2,33 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5fbe32cc-fba3-4508-a98e-ba37c1126208" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/debug/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/debug/debug.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bootdo/common/domain/entity/MedCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bootdo/common/domain/entity/MedCase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bootdo/controller/FileController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bootdo/controller/FileController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/bootdo/common/domain/entity/MedCase.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bootdo/common/domain/entity/MedCase.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/bootdo/controller/FileController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bootdo/controller/FileController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/bootdo/common/aspect/MedCaseAnn.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/bootdo/common/domain/entity/MedCaseApply.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/bootdo/common/domain/entity/MedCaseApplyAgree.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/bootdo/common/domain/page/ManPage.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/bootdo/common/domain/req/QueryCaseListReq.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/bootdo/common/domain/req/QueryListReq.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/bootdo/common/domain/res/MedCaseApplyRes.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/bootdo/common/utils/DataUtils.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/bootdo/controller/MedCaseAgreeController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/bootdo/controller/MedCaseApplyController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/bootdo/controller/MedCaseController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/bootdo/controller/RelativesController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/bootdo/mapper/MedCaseApplyAgreeMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/bootdo/mapper/MedCaseApplyMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/bootdo/service/MedCaseApplyAgreeService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/bootdo/service/MedCaseApplyService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mybatis/SysRoleMenuMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/js/med/agree/list.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/js/med/apply/list.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/js/med/case/info.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/js/med/case/list.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/js/med/relatives/list.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/templates/med/agree/list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/templates/med/apply/list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/templates/med/case/info.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/templates/med/case/list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/templates/med/relatives/list.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -215,7 +236,7 @@
       <workItem from="1641352206714" duration="3988000" />
       <workItem from="1642502208848" duration="408000" />
       <workItem from="1642555068349" duration="15317000" />
-      <workItem from="1642832999974" duration="32616000" />
+      <workItem from="1642832999974" duration="33048000" />
     </task>
     <task id="LOCAL-00001" summary="first">
       <created>1619691382807</created>
@@ -287,7 +308,14 @@
       <option name="project" value="LOCAL" />
       <updated>1642931936510</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="add api">
+      <created>1642942304058</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1642942304058</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -488,10 +516,10 @@
     <state width="1878" height="344" key="GridCell.Tab.2.right/-1920.248.1920.1055/0.25.1920.985@-1920.248.1920.1055" timestamp="1642669470099" />
     <state width="1878" height="344" key="GridCell.Tab.2.right/-1920.248.1920.1055/0.25.1920.987@-1920.248.1920.1055" timestamp="1642671103401" />
     <state width="1493" height="148" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1642942028998" />
-    <state x="361" y="136" key="Vcs.Push.Dialog.v2" timestamp="1642932195859">
+    <state x="361" y="136" key="Vcs.Push.Dialog.v2" timestamp="1642942525465">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="136" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1642932195859" />
+    <state x="361" y="136" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1642942525465" />
     <state x="-1171" y="684" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1638497390270">
       <screen x="-1920" y="223" width="1920" height="1080" />
     </state>

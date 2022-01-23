@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.w3.org/1999/xhtml">
+<meta charset="utf-8">
+<head th:include="include :: header"></head>
+<body class="gray-bg">
+	<div class="wrapper wrapper-content animated fadeInRight">
+		<div class="row">
+			<div class="col-sm-12">
+				<div class="ibox-content">
+					<form class="form-horizontal m-t" id="signupForm">
+						<div class="form-group">
+							<label class="col-sm-2 control-label">病情流水号：</label>
+							<div class="col-sm-10">
+								<input name="courseFlow" class="form-control" type="text"
+									   th:value="${medCase.courseFlow}">
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="col-sm-2 control-label">病人标识：</label>
+							<div class="col-sm-4">
+								<input name="mrId" class="form-control" type="text"
+									   th:value="${medCase.mrId}">
+							</div>
+							<label class="col-sm-2 control-label">核磁共振标识：</label>
+							<div class="col-sm-4">
+								<input name="courseFlow" class="form-control" type="text"
+									   th:value="${medCase.courseFlow}">
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="col-sm-2 control-label">记录人员标识：</label>
+							<div class="col-sm-4">
+								<input name="recordownId" class="form-control" type="text"
+									   th:value="${medCase.recordownId}">
+							</div>
+							<label class="col-sm-2 control-label">记录人员姓名：</label>
+							<div class="col-sm-4">
+								<input name="recordownName" class="form-control" type="text"
+									   th:value="${medCase.recordownName}">
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="col-sm-2 control-label">修改记录标识：</label>
+							<div class="col-sm-4">
+								<input name="recordmodifyId" class="form-control" type="text"
+									   th:value="${medCase.recordmodifyId}">
+							</div>
+							<label class="col-sm-2 control-label">修改人员姓名：</label>
+							<div class="col-sm-4">
+								<input name="recordmodifyName" class="form-control" type="text"
+									   th:value="${medCase.recordmodifyName}">
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="col-sm-2 control-label">修改记录时间：</label>
+							<div class="col-sm-4">
+								<input name="recordmodifyTime" class="form-control" type="text"
+									   th:value="${medCase.recordmodifyTime}">
+							</div>
+							<label class="col-sm-2 control-label">纪录时间：</label>
+							<div class="col-sm-4">
+								<input name="recordTime" class="form-control" type="text"
+									   th:value="${medCase.recordTime}">
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="col-sm-2 control-label">行为标识：</label>
+							<div class="col-sm-4">
+								<input name="courseTypeid" class="form-control" type="text"
+									   th:value="${medCase.courseTypeid}">
+							</div>
+							<label class="col-sm-2 control-label">行为：</label>
+							<div class="col-sm-4">
+								<input name="courseType" class="form-control" type="text"
+									   th:value="${medCase.courseType}">
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="col-sm-2 control-label">医生姓名：</label>
+							<div class="col-sm-10">
+								<input name="doctorName" class="form-control" type="text"
+									   th:value="${medCase.doctorName}">
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="col-sm-2 control-label">科室标识：</label>
+							<div class="col-sm-4">
+								<input name="deptId" class="form-control" type="text"
+									   th:value="${medCase.deptId}">
+							</div>
+							<label class="col-sm-2 control-label">科室名称：</label>
+							<div class="col-sm-4">
+								<input name="deptName" class="form-control" type="text"
+									   th:value="${medCase.deptName}">
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="col-sm-2 control-label">病室标识：</label>
+							<div class="col-sm-4">
+								<input name="areaId" class="form-control" type="text"
+									   th:value="${medCase.areaId}">
+							</div>
+							<label class="col-sm-2 control-label">病室名称：</label>
+							<div class="col-sm-4">
+								<input name="areaName" class="form-control" type="text"
+									   th:value="${medCase.areaName}">
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="col-sm-2 control-label">病情：</label>
+							<div class="col-sm-10">
+								<textarea class="form-control" th:text="${medCase.courseContent}">
+								</textarea>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div th:include="include::footer"></div>
+	<script th:inline="javascript"> var ctx = [[@{/}]] ; </script>
+	<script type="text/javascript" th:src="@{/js/med/case/info.js}">
+	</script>
+</body>
+</html>

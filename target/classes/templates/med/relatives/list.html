@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh_CN" xmlns:th="http://www.thymeleaf.org">
+<meta charset="utf-8">
+<head th:include="include :: header"></head>
+<style>
+    .manager_toolbar_label {
+        position: relative;
+        margin: 10px;
+        line-height: 34px;
+    }
+
+    .manager_toolbar_last_input {
+        margin-right: 10px;
+    }
+
+    .manager_btn_i {
+        margin-right: 2px;
+    }
+
+    .manager_btn_pl_dw {
+        margin-left: 10px;
+    }
+</style>
+<body class="gray-bg">
+<div class="wrapper wrapper-content ">
+    <div class="col-sm-12">
+        <div class="ibox">
+            <div class="ibox-body">
+                <div class="fixed-table-toolbar">
+                    <div class="columns pull-left">
+                        <button class="btn btn-success manager_btn_pl_dw" onclick="insertRow()">
+                            <i class="fa fa-search" aria-hidden="true"></i>新增亲属
+                        </button>
+                    </div>
+                </div>
+                <table id="exampleTable" data-mobile-responsive="true">
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<div th:include="include :: footer"></div>
+<script th:inline="javascript"> var ctx = [[@{/}]] ; </script>
+<script type="text/javascript" th:src="@{/js/med/relatives/list.js}"></script>
+</body>
+</html>
