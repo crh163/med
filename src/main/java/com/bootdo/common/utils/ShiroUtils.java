@@ -1,6 +1,7 @@
 package com.bootdo.common.utils;
 
 import com.bootdo.common.domain.entity.SysUser;
+import com.google.gson.Gson;
 import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.session.Session;
 import org.apache.shiro.session.mgt.eis.SessionDAO;
@@ -20,10 +21,16 @@ public class ShiroUtils {
     }
 
     public static SysUser getUser() {
+        //UserRealm中存入时已经转成 json 了
         Object object = getSubjct().getPrincipal();
-        return (SysUser)object;
+        return new Gson().fromJson(object + "", SysUser.class);
     }
+
     public static Long getUserId() {
+        SysUser user = getUser();
+        if (user == null) {
+            return null;
+        }
         return getUser().getId();
     }
 

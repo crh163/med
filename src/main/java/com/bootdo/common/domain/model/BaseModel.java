@@ -22,25 +22,21 @@ public class BaseModel {
     /**
      * 创建人id
      */
-    @JsonIgnore
     private Long createId;
 
     /**
      * 创建时间
      */
-    @JsonIgnore
     private Date createDate;
 
     /**
      * 最近修改人id
      */
-    @JsonIgnore
     private Long updateId;
 
     /**
      * 最近修改时间
      */
-    @JsonIgnore
     private Date updateDate;
 
 }

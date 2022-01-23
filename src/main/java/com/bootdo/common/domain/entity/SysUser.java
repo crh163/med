@@ -22,4 +22,6 @@ public class SysUser extends BaseModel implements Serializable {
 
     private Long roleId;
 
+    private Long relativesId;
+
 }

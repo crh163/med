@@ -1,7 +1,7 @@
 package com.bootdo.common.domain.entity;
 
+import com.bootdo.common.aspect.MedCaseAnn;
 import com.bootdo.common.domain.model.BaseModel;
-import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Data;
 
 import java.io.Serializable;
@@ -11,67 +11,130 @@ public class MedCase extends BaseModel implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
-    @JsonProperty("COURSE_FLOW")
+    /**
+     * 病人病情的流水号
+     */
+    @MedCaseAnn("COURSE_FLOW")
     private String courseFlow;
 
-    @JsonProperty("IN_PATIENT_FLOW")
+    /**
+     * 病人的id
+     */
+    @MedCaseAnn("IN_PATIENT_FLOW")
     private String inPatientFlow;
 
-    @JsonProperty("MR_ID")
+    /**
+     * 核磁共振的id
+     */
+    @MedCaseAnn("MR_ID")
     private String mrId;
 
-    @JsonProperty("RECORDOWN_ID")
+    /**
+     * 记录人员的id
+     */
+    @MedCaseAnn("RECORDOWN_ID")
     private String recordownId;
 
-    @JsonProperty("RECORDOWN_NAME")
+    /**
+     * 记录人员的姓名
+     */
+    @MedCaseAnn("RECORDOWN_NAME")
     private String recordownName;
 
-    @JsonProperty("RECORDMODIFY_ID")
+    /**
+     * 修改记录人员的id
+     */
+    @MedCaseAnn("RECORDMODIFY_ID")
     private String recordmodifyId;
 
-    @JsonProperty("RECORDMODIFY_NAME")
-    private String recprdModifyName;
+    /**
+     * 修改记录人员的姓名
+     */
+    @MedCaseAnn("RECORDMODIFY_NAME")
+    private String recordmodifyName;
 
-    @JsonProperty("RECORDMODIFY_TIME")
+    /**
+     * 修改记录时间
+     */
+    @MedCaseAnn("RECORDMODIFY_TIME")
     private String recordmodifyTime;
 
-    @JsonProperty("RECORD_TIME")
+    /**
+     * 纪律的时间
+     */
+    @MedCaseAnn("RECORD_TIME")
     private String recordTime;
 
-    @JsonProperty("COURSE_TYPEID")
+    /**
+     * 行为的id
+     */
+    @MedCaseAnn("COURSE_TYPEID")
     private String courseTypeid;
 
-    @JsonProperty("COURSE_TYPE")
+    /**
+     * 行为
+     */
+    @MedCaseAnn("COURSE_TYPE")
     private String courseType;
 
-    @JsonProperty("DOCTOR_NAME")
+    /**
+     * 医生的姓名
+     */
+    @MedCaseAnn("DOCTOR_NAME")
     private String doctorName;
 
-    @JsonProperty("COURSE_CONTENT")
+    /**
+     *
+     */
+    @MedCaseAnn("COURSE_CONTENT")
     private String courseContent;
 
-    @JsonProperty("DEPT_ID")
+    /**
+     * 科室id
+     */
+    @MedCaseAnn("DEPT_ID")
     private String deptId;
 
-    @JsonProperty("DEPT_NAME")
+    /**
+     * 科室名称
+     */
+    @MedCaseAnn("DEPT_NAME")
     private String deptName;
 
-    @JsonProperty("AREA_ID")
+    /**
+     * 病室id
+     */
+    @MedCaseAnn("AREA_ID")
     private String areaId;
 
-    @JsonProperty("AREA_NAME")
+    /**
+     * 病室名称
+     */
+    @MedCaseAnn("AREA_NAME")
     private String areaName;
 
-    @JsonProperty("SUBMIT_FLAG")
+    /**
+     * 没啥用
+     */
+    @MedCaseAnn("SUBMIT_FLAG")
     private String submitFlag;
 
-    @JsonProperty("MD5_CONTENT")
+    /**
+     * 对内容md5加密的返回的hash
+     */
+    @MedCaseAnn("MD5_CONTENT")
     private String md5Content;
 
-    @JsonProperty("LOCK_FLAG")
+    /**
+     * 没啥用
+     */
+    @MedCaseAnn("LOCK_FLAG")
     private String lockFlag;
 
-    @JsonProperty("NEWPAGE")
+    /**
+     * 没啥用
+     */
+    @MedCaseAnn("NEWPAGE")
     private String newpage;
 
 }

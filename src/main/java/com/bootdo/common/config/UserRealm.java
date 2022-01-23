@@ -3,6 +3,7 @@ package com.bootdo.common.config;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.bootdo.common.domain.entity.SysUser;
 import com.bootdo.mapper.SysUserMapper;
+import com.google.gson.Gson;
 import org.apache.shiro.authc.*;
 import org.apache.shiro.authz.AuthorizationInfo;
 import org.apache.shiro.authz.SimpleAuthorizationInfo;
@@ -40,7 +41,8 @@ public class UserRealm extends AuthorizingRealm {
 		if (user.getStatus() == 0) {
 			throw new LockedAccountException("账号已被锁定,请联系管理员");
 		}
-		return new SimpleAuthenticationInfo(user, password, getName());
+		Gson gson = new Gson();
+		return new SimpleAuthenticationInfo(gson.toJson(user), password, getName());
 	}
 
 }

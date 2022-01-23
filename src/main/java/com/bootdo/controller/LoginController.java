@@ -39,7 +39,7 @@ public class LoginController extends BaseController {
 
     @GetMapping({"/index"})
     public String index(Model model) {
-        model.addAttribute("menus", sysMenuService.listMenuTree());
+        model.addAttribute("menus", sysMenuService.listMenuTree(getUserId()));
         model.addAttribute("username", getUser().getUsername());
         return "index_v1";
     }

@@ -10,7 +10,9 @@ public enum ResponseCodeEnum {
     FAIL(500, "请求异常"),
 
     FAIL_FILE_UPLOAD_ERROR(6000, "文件上传失败！"),
-    DEPT_COMMON_PARENT_AND_NAME(6001, "");
+    USER_NOT_EXIST(6001, "用户不存在"),
+    CASE_APPLY_ERROR(6002, "已申请该患者的病例"),
+    CASE_APPLY_NO_ROLE3(6003, "该用户非病人");
 
     private Integer code;
 

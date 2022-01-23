@@ -1,5 +1,6 @@
 package com.bootdo.controller;
 
+import com.bootdo.common.aspect.MedCaseAnn;
 import com.bootdo.common.constant.ResponseCodeEnum;
 import com.bootdo.common.domain.entity.MedCase;
 import com.bootdo.common.domain.entity.Response;
@@ -10,9 +11,9 @@ import com.bootdo.common.utils.ResponseUtil;
 import com.bootdo.service.MedCaseService;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.extern.slf4j.Slf4j;
-import org.dom4j.Document;
-import org.dom4j.Element;
-import org.dom4j.io.SAXReader;
+//import org.dom4j.Document;
+//import org.dom4j.Element;
+//import org.dom4j.io.SAXReader;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -58,31 +59,31 @@ public class FileController {
     }
 
     private void parseXmlAndSave(InputStream file) throws Exception {
-        SAXReader reader = new SAXReader();
-        Document document = reader.read(file);
-        Element rootElement = document.getRootElement();
-        Iterator iterator = rootElement.elementIterator();
-        List<MedCase> list = new ArrayList<>();
-        while (iterator.hasNext()){
-            Element stu = (Element) iterator.next();
-            if ("QueryResult".equals(stu.getName())) {
-                Iterator iterator1 = stu.elementIterator();
-                MedCase medCase = new MedCase();
-                while (iterator1.hasNext()){
-                    Element stuChild = (Element) iterator1.next();
-                    for (Field field : MedCase.class.getDeclaredFields()) {
-                        JsonProperty annotation = field.getAnnotation(JsonProperty.class);
-                        if (annotation != null && stuChild.getName().equals(annotation.value())) {
-                            field.setAccessible(true);
-                            field.set(medCase, stuChild.getStringValue());
-                        }
-                    }
-                }
-                medCase.setCreateDate(new Date());
-                list.add(medCase);
-            }
-        }
-        medCaseService.saveBatch(list);
+//        SAXReader reader = new SAXReader();
+//        Document document = reader.read(file);
+//        Element rootElement = document.getRootElement();
+//        Iterator iterator = rootElement.elementIterator();
+//        List<MedCase> list = new ArrayList<>();
+//        while (iterator.hasNext()){
+//            Element stu = (Element) iterator.next();
+//            if ("QueryResult".equals(stu.getName())) {
+//                Iterator iterator1 = stu.elementIterator();
+//                MedCase medCase = new MedCase();
+//                while (iterator1.hasNext()){
+//                    Element stuChild = (Element) iterator1.next();
+//                    for (Field field : MedCase.class.getDeclaredFields()) {
+//                        MedCaseAnn annotation = field.getAnnotation(MedCaseAnn.class);
+//                        if (annotation != null && stuChild.getName().equals(annotation.value())) {
+//                            field.setAccessible(true);
+//                            field.set(medCase, stuChild.getStringValue());
+//                        }
+//                    }
+//                }
+//                medCase.setCreateDate(new Date());
+//                list.add(medCase);
+//            }
+//        }
+//        medCaseService.saveBatch(list);
     }
 
     public static void main(String[] args) throws Exception {

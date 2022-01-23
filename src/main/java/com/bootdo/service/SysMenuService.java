@@ -2,12 +2,15 @@ package com.bootdo.service;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.bootdo.common.domain.entity.SysMenu;
+import com.bootdo.common.domain.entity.SysRoleMenu;
 import com.bootdo.common.domain.entity.SysUser;
 import com.bootdo.common.domain.model.BuildTree;
 import com.bootdo.common.domain.model.Tree;
 import com.bootdo.mapper.SysMenuMapper;
+import com.bootdo.mapper.SysRoleMenuMapper;
 import com.bootdo.mapper.SysUserMapper;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
@@ -22,6 +25,12 @@ import java.util.Map;
 @Service
 @Slf4j
 public class SysMenuService extends BaseService<SysMenuMapper, SysMenu> {
+
+    @Autowired
+    private SysUserMapper sysUserMapper;
+
+    @Autowired
+    private SysRoleMenuMapper sysRoleMenuMapper;
     
     public Tree<SysMenu> getTree(Long roleId) {
         List<Tree<SysMenu>> trees = new ArrayList<Tree<SysMenu>>();
@@ -29,8 +38,7 @@ public class SysMenuService extends BaseService<SysMenuMapper, SysMenu> {
         if (roleId == null) {
             menus = list();
         } else {
-            QueryWrapper wrapper = new QueryWrapper<SysMenu>();
-
+            menus = sysRoleMenuMapper.selectByRoleId(roleId);
         }
         for (SysMenu sysMenuDO : menus) {
             Tree<SysMenu> tree = new Tree<SysMenu>();
@@ -44,10 +52,19 @@ public class SysMenuService extends BaseService<SysMenuMapper, SysMenu> {
         return t;
     }
 
-    public List<Tree<SysMenu>> listMenuTree() {
+    public List<Tree<SysMenu>> listMenuTree(Long userId) {
+        SysUser sysUser = sysUserMapper.selectById(userId);
+        if (sysUser == null) {
+            return null;
+        }
         List<Tree<SysMenu>> trees = new ArrayList<Tree<SysMenu>>();
-        List<SysMenu> menuDOs = list();
-        for (SysMenu sysMenuDO : menuDOs) {
+        List<SysMenu> menus = null;
+        if (sysUser.getRoleId() == null) {
+            menus = list();
+        } else {
+            menus = sysRoleMenuMapper.selectByRoleId(sysUser.getRoleId());
+        }
+        for (SysMenu sysMenuDO : menus) {
             Tree<SysMenu> tree = new Tree<SysMenu>();
             tree.setId(sysMenuDO.getId().toString());
             tree.setParentId(sysMenuDO.getParentId().toString());
