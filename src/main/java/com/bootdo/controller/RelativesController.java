@@ -63,6 +63,8 @@ public class RelativesController extends BaseController {
 		SysUser user = sysUserService.getOne(new QueryWrapper<SysUser>().eq("username", username));
 		if (user == null) {
 			return ResponseUtil.getFail(ResponseCodeEnum.USER_NOT_EXIST);
+		} else if (user.getRoleId() != 4) {
+			return ResponseUtil.getFail(ResponseCodeEnum.USER_NO_EXIST_QS);
 		}
 		SysUser sysUser = new SysUser();
 		sysUser.setId(user.getId());

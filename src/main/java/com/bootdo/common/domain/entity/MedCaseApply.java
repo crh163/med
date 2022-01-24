@@ -12,6 +12,8 @@ public class MedCaseApply extends BaseModel implements Serializable {
 
     private String username;
 
+    private String name;
+
     private Long caseId;
 
     private String caseUsername;

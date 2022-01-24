@@ -30,6 +30,9 @@ public class MedCaseApplyController extends BaseController {
 	private MedCaseApplyService medCaseApplyService;
 
 	@Autowired
+	private MedCaseService medCaseService;
+
+	@Autowired
 	private SysUserService sysUserService;
 
 	@GetMapping("/list")
@@ -41,6 +44,7 @@ public class MedCaseApplyController extends BaseController {
 	@ResponseBody
 	public ManPage list(@RequestBody QueryCaseListReq req) {
 		QueryWrapper<MedCaseApply> wrapper = new QueryWrapper<>();
+		wrapper.orderByDesc("create_date");
 		return medCaseApplyService.selectList(req.getPage(), req.getPageSize(), wrapper);
 	}
 
@@ -53,15 +57,23 @@ public class MedCaseApplyController extends BaseController {
 		} else if (user.getRoleId() != 3) {
 			return ResponseUtil.getFail(ResponseCodeEnum.CASE_APPLY_NO_ROLE3);
 		}
+		int count = medCaseService.count(new QueryWrapper<MedCase>()
+				.eq("user_id", user.getId()));
+		if (count == 0) {
+			return ResponseUtil.getFail(ResponseCodeEnum.USER_NO_EXIST_CASE);
+		}
+		//查询状态为非不同意的，可再次发起申请
 		List<MedCaseApply> list = medCaseApplyService.list(new QueryWrapper<MedCaseApply>()
 				.eq("user_id", getUserId())
-				.eq("case_username", username));
+				.eq("case_username", username)
+				.last(" and status!=1 "));
 		if (!CollectionUtils.isEmpty(list)) {
 			return ResponseUtil.getFail(ResponseCodeEnum.CASE_APPLY_ERROR);
 		}
 		MedCaseApply medCaseApply = new MedCaseApply();
 		medCaseApply.setUserId(getUserId());
 		medCaseApply.setUsername(getUser().getUsername());
+		medCaseApply.setName(getUser().getName());
 		medCaseApply.setCaseId(user.getId());
 		medCaseApply.setCaseUsername(user.getUsername());
 		medCaseApply.setCaseName(user.getName());

@@ -14,6 +14,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.util.DigestUtils;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -41,6 +42,7 @@ public class LoginController extends BaseController {
     public String index(Model model) {
         model.addAttribute("menus", sysMenuService.listMenuTree(getUserId()));
         model.addAttribute("username", getUser().getUsername());
+        model.addAttribute("name", getUser().getName());
         return "index_v1";
     }
 
@@ -57,7 +59,7 @@ public class LoginController extends BaseController {
     @PostMapping("/login")
     @ResponseBody
     public R ajaxLogin(String username, String password, String verify, HttpServletRequest request) {
-        password = MD5Utils.encrypt(username, password);
+        password = DigestUtils.md5DigestAsHex(password.getBytes());
         UsernamePasswordToken token = new UsernamePasswordToken(username, password);
         Subject subject = SecurityUtils.getSubject();
         try {
@@ -71,7 +73,7 @@ public class LoginController extends BaseController {
     @GetMapping("/logout")
     public String logout() {
         ShiroUtils.logout();
-        return "redirect:/login";
+        return "redirect:/bootdo/login";
     }
 
     @GetMapping("/main")

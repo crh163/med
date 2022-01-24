@@ -1,6 +1,5 @@
 package com.bootdo.common.domain.res;
 
-import com.bootdo.common.domain.model.BaseModel;
 import lombok.Data;
 
 import java.io.Serializable;
@@ -18,6 +17,8 @@ public class MedCaseApplyRes implements Serializable {
     private Long userId;
 
     private String username;
+
+    private String name;
 
     private Long caseId;
 

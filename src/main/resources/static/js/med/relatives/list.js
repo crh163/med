@@ -52,8 +52,11 @@ function load() {
 						field : 'id',
 						align : 'center',
 						formatter : function(value, row, index) {
-							return '<a class="btn btn-success btn-sm" href="#" title="删除" href="#" onclick="deleteRow(\''
-								+ row.id + '\')"><i class="fa fa-search"></i></a> ';
+							if (row.roleId == '3') {
+								return '';
+							}
+							return '<a class="btn btn-warning btn-sm" href="#" title="删除" href="#" onclick="deleteRow(\''
+								+ row.id + '\')"><i class="fa fa-remove"> 删除</i></a> ';
 						}
 					}]
 			});

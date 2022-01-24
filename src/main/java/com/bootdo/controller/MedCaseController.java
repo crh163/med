@@ -40,9 +40,9 @@ public class MedCaseController extends BaseController {
 	@ResponseBody
 	public ManPage list(@RequestBody QueryCaseListReq req) {
 		QueryWrapper<MedCase> wrapper = new QueryWrapper<>();
-		wrapper.eq("userId", req.getUserId() == null ? getUserId() : req.getUserId());
+		wrapper.eq("user_id", req.getUserId() == null ? getUserId() : req.getUserId());
 		if (StringUtils.isNotBlank(req.getDoctorName())) {
-			wrapper.like("doctorName", req.getDoctorName());
+			wrapper.like("doctor_name", req.getDoctorName());
 		}
 		return medCaseService.selectList(req.getPage(), req.getPageSize(), wrapper);
 	}

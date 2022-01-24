@@ -27,31 +27,29 @@ public class MedCaseApplyAgreeService extends BaseService<MedCaseApplyAgreeMappe
 
     @Transactional
     public void agree(Long id, String type, SysUser sysUser) {
+        MedCaseApply apply = new MedCaseApply();
+        apply.setId(id);
+        apply.setStatus("1".equals(type) ? 2 : 1);
+        //病人自己操作
+        if (sysUser.getRoleId() == 3) {
+            medCaseApplyService.updateById(apply);
+            return;
+        }
+        //嗝屁等亲属操作
         MedCaseApplyAgree medCaseApplyAgree = new MedCaseApplyAgree();
         medCaseApplyAgree.setApplyId(id);
         medCaseApplyAgree.setUserId(sysUser.getId());
         medCaseApplyAgree.setType(type);
         save(medCaseApplyAgree);
-        boolean update = true;
-        Integer status = "1".equals(type) ? 2 : 1;
-        if (sysUser.getRoleId() != 3) {
-            //计算是否有一半以上同意
-            int relativesCount = sysUserService.count(new QueryWrapper<SysUser>()
-                    .eq("relatives_id", sysUser.getRelativesId()));
-            int agreeCount = count(new QueryWrapper<MedCaseApplyAgree>()
-                    .eq("apply_id", id)
-                    .eq("type", type));
-            int x = relativesCount % 2>0?1:0;
-            if (relativesCount/2+x > agreeCount) {
-                update = false;
-            } else {
-                status = 2;
-            }
-        }
-        if (update) {
-            MedCaseApply apply = new MedCaseApply();
-            apply.setId(id);
-            apply.setStatus(status);
+        //计算是否有一半以上同意
+        int relativesCount = sysUserService.count(new QueryWrapper<SysUser>()
+                .eq("relatives_id", sysUser.getRelativesId()));
+        int agreeCount = count(new QueryWrapper<MedCaseApplyAgree>()
+                .eq("apply_id", id)
+                .eq("type", type));
+        int x = relativesCount % 2>0?1:0;
+        if (relativesCount/2+x <= agreeCount) {
+            apply.setStatus(2);
             medCaseApplyService.updateById(apply);
         }
     }

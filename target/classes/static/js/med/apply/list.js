@@ -32,10 +32,14 @@ function load() {
 						field : 'idCheck',
 						checkbox : true
 					},
-                    {
-                        field : 'username',
-                        title : '申请人'
-                    },
+					{
+						field : 'username',
+						title : '申请人用户名'
+					},
+					{
+						field : 'name',
+						title : '申请人姓名'
+					},
 					{
 						field : 'caseUsername',
 						title : '患者用户名'
@@ -64,7 +68,7 @@ function load() {
 								return '';
 							}
 							return '<a class="btn btn-success btn-sm" href="#" title="查看" href="#" onclick="lookInfo(\''
-								+ row.caseId + '\')"><i class="fa fa-search"></i></a> ';
+								+ row.caseId + '\')"><i class="fa fa-search"> 查看</i></a> ';
 						}
 					}]
 			});

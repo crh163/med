@@ -97,7 +97,7 @@ function load() {
 						align : 'center',
 						formatter : function(value, row, index) {
 							return '<a class="btn btn-success btn-sm" href="#" title="查看" href="#" onclick="lookInfo(\''
-								+ row.id + '\')"><i class="fa fa-search"></i></a> ';
+								+ row.id + '\')"><i class="fa fa-search"> 查看</i></a> ';
 						}
 					}]
 			});

@@ -28,22 +28,14 @@
         <div class="sidebar-collapse">
             <ul class="nav" id="side-menu">
                 <li class="nav-header">
-                    <div>
+                    <div style="text-align: center">
                         <span><img alt="image" class="img-circle" height="60" width="60"
                                    th:src="@{/img/photo_s.jpg}"/></span>
                         <h3 class="" style="color: #ffffff">
-                            </i>后台管理系统
+                            <strong class="font-bold" th:text="${name}"></strong>
                         </h3>
                     </div>
                     <div class="dropdown profile-element hidden">
-
-<!--                        <a data-toggle="dropdown" class="dropdown-toggle" href="#">-->
-<!--                            <span class="clear">-->
-<!--                            <span class="block m-t-xs"><strong class="font-bold"-->
-<!--                                                               th:text="${username}">admin</strong></span>-->
-<!--                            <span class="text-muted text-xs block">超级管理员<b class="caret"></b></span>-->
-<!--                             </span>-->
-<!--                        </a>-->
                         <ul class="dropdown-menu animated fadeInRight m-t-xs">
                             <li><a @click="personal" href="#">修改头像</a>
                             </li>
@@ -54,7 +46,7 @@
                             <li><a @click="personal" href="#">信箱</a>
                             </li>
                             <li class="divider"></li>
-                            <li><a href="/logout">安全退出</a>
+                            <li><a href="/bootdo/logout">安全退出</a>
                             </li>
                         </ul>
                     </div>
@@ -103,35 +95,6 @@
                     </form>
                 </div>
                 <ul class="nav navbar-top-links navbar-right">
-                    <!-- TODO CRH 通知功能 -->
-<!--                    <li class="dropdown"><a class="dropdown-toggle count-info"-->
-<!--                                            data-toggle="dropdown" href="#"> <i class="fa fa-envelope"></i>-->
-<!--                        <span class="label label-warning">{{total}}</span>通知-->
-<!--                    </a>-->
-<!--                        <ul class="dropdown-menu dropdown-messages">-->
-<!--                            <li v-for="row in rows" class="m-t-xs">-->
-<!--                                <div class="dropdown-messages-box">-->
-<!--                                    <a class="pull-left"> <i-->
-<!--                                            class="fa fa-server"></i>-->
-<!--                                    </a>-->
-<!--                                    <div class="media-body">-->
-<!--                                        <small class="pull-right">{{row.before}}</small>-->
-<!--                                        <strong>{{row.sender}}</strong>-->
-<!--                                        {{row.title}} <br>-->
-<!--                                        <small class="text-muted">{{row.updateDate}}</small>-->
-<!--                                    </div>-->
-<!--                                </div>-->
-<!--                                <div class="divider"></div>-->
-<!--                            </li>-->
-<!--                            <li>-->
-<!--                                <div class="text-center link-block">-->
-<!--                                    <a class="J_menuItem" href="/oa/notify/selfNotify"> <i-->
-<!--                                            class="fa fa-envelope"></i> <strong> 查看所有消息</strong>-->
-<!--                                    </a>-->
-<!--                                </div>-->
-<!--                            </li>-->
-<!--                        </ul>-->
-<!--                    </li>-->
                     <li class="hidden-xs"><a @click="personal" href="#" ><i class="fa fa-id-card"></i> 个人</a></li>
                     <li class="dropdown hidden-xs"><a
                             class="right-sidebar-toggle" aria-expanded="false"> <i
@@ -164,7 +127,7 @@
                     <li class="J_tabCloseOther"><a>关闭其他选项卡</a></li>
                 </ul>
             </div>
-            <a href="/logout" class="roll-nav roll-right J_tabExit"><i
+            <a href="/bootdo/logout" class="roll-nav roll-right J_tabExit"><i
                     class="fa fa fa-sign-out"></i> 退出</a>
         </div>
         <div class="row J_mainContent" id="content-main">

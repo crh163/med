@@ -51,6 +51,7 @@ public class MedCaseAgreeController extends BaseController {
 		}
 		QueryWrapper<MedCaseApply> wrapper = new QueryWrapper<>();
 		wrapper.eq("case_id", selectUserId);
+		wrapper.orderByDesc("create_date");
 		ManPage manPage = medCaseApplyService.selectList(req.getPage(), req.getPageSize(), wrapper);
 		List<MedCaseApplyRes> list = new ArrayList<>();
 		for (Object object : manPage.getRows()) {

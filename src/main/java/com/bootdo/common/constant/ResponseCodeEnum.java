@@ -12,7 +12,9 @@ public enum ResponseCodeEnum {
     FAIL_FILE_UPLOAD_ERROR(6000, "文件上传失败！"),
     USER_NOT_EXIST(6001, "用户不存在"),
     CASE_APPLY_ERROR(6002, "已申请该患者的病例"),
-    CASE_APPLY_NO_ROLE3(6003, "该用户非病人");
+    CASE_APPLY_NO_ROLE3(6003, "该用户非病人"),
+    USER_NO_EXIST_CASE(6004, "该用户没有录入病例"),
+    USER_NO_EXIST_QS(6005, "该用户非亲属");
 
     private Integer code;
 

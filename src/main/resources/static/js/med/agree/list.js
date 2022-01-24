@@ -32,10 +32,14 @@ function load() {
 						field : 'idCheck',
 						checkbox : true
 					},
-                    {
-                        field : 'username',
-                        title : '申请人'
-                    },
+					{
+						field : 'username',
+						title : '申请人用户名'
+					},
+					{
+						field : 'name',
+						title : '申请人姓名'
+					},
 					{
 						field : 'caseUsername',
 						title : '患者用户名'
@@ -63,10 +67,10 @@ function load() {
 							if (row.status !== 0 || row.ownStatus !== 0) {
 								return '';
 							}
-							return '<a class="btn btn-success btn-sm" href="#" title="同意" href="#" onclick="agree(\''
-								+ row.caseId + '\',1)"><i class="fa fa-search">同意</i></a> ' +
-								'<a class="btn btn-success btn-sm" href="#" title="不同意" href="#" onclick="agree(\''
-								+ row.caseId + '\',0)"><i class="fa fa-search">不同意</i></a> ';
+							return '<a class="btn btn-primary btn-sm" href="#" title="同意" href="#" onclick="agree(\''
+								+ row.id + '\',1)"><i class="fa fa-check"> 同意</i></a> ' +
+								'<a class="btn btn-warning btn-sm" href="#" title="不同意" href="#" onclick="agree(\''
+								+ row.id + '\',0)"><i class="fa fa-times"> 不同意</i></a> ';
 						}
 					}]
 			});
