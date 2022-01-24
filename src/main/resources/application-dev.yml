@@ -8,7 +8,7 @@ spring:
     driverClassName: com.mysql.jdbc.Driver
     url: jdbc:mysql://47.99.89.78:3306/wzq_bs?characterEncoding=utf8&useSSL=false
     username: root
-    password: chenrenhao
+    password: jj2016..
     initialSize: 1
     minIdle: 3
     maxActive: 20
