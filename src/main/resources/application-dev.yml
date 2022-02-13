@@ -6,7 +6,8 @@ spring:
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
     driverClassName: com.mysql.jdbc.Driver
-    url: jdbc:mysql://47.99.89.78:3306/wzq_bs?characterEncoding=utf8&useSSL=false
+#    url: jdbc:mysql://47.99.89.78:3306/wzq_bs?characterEncoding=utf8&useSSL=false
+    url: jdbc:mysql://47.118.59.177:3306/wzq_bs?characterEncoding=utf8&useSSL=false
     username: root
     password: jj2016..
     initialSize: 1
@@ -32,7 +33,7 @@ spring:
     # 合并多个DruidDataSource的监控数据
     #useGlobalDataSourceStat: true
   redis:
-    host: 47.99.89.78
+    host: 47.118.59.177
     port: 6379
     password: 123456
     timeout: 10000
@@ -52,7 +53,7 @@ fdfs:
   connect-timeout: 600
   so-timeout: 1500
   #tracker地址
-  trackerList: 120.25.216.33:22122
+  trackerList: 47.118.59.177:22122
   #缩略图配置
   thumbImage:
     height: 150
@@ -60,4 +61,4 @@ fdfs:
   #获取连接池最大数量
   pool:
     max-total: 200
-  fileUrlPrefix: http://120.25.216.33:8888/
+  fileUrlPrefix: http://47.118.59.177:8888/
