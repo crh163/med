@@ -10,7 +10,7 @@ public enum AdminEnum {
     /**
      * user admin 对应数据库 id,username
      */
-    USER_ADMIN(1L, "admin");
+    USER_ADMIN(9L, "admin");
 
     AdminEnum(Long id, String sign){
         this.id = id;
